@@ -33,4 +33,6 @@ code {
   color: azure;
   font-size: 20px;
   margin: 20px;
+  border-radius: 5px;
+  border-color: burlywood;
 }

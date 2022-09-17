@@ -10,36 +10,37 @@ class SubmitData extends React.Component {
     // const str =  this.props.inputText;
   }
   // handleSubmit = (event) => {
-  //   // event.preventDefault()
-  //   console.log("button clicked")
-  //   // event.target.value;
-  //   // this.setState({button: ["dsfdsf"]})
+    // event.preventDefault()
+    // event.target.value;
+    // this.setState({button: ["dsfdsf"]})
 
   // }
-  stringSubmit = (e) => {
-    // console.log("string data");
-    // console.log(this.state.inputText);
+  handleSubmit = () => {
+    // const strArr = [];
     const string = this.state.inputText;
+    // strArr.push(string);
     console.log(string);
+    this.setState({inputText: ''})
+
     
   }
-  changehandle = (event) =>{
+  changeHandle = (event) =>{
     // console.log(event.target.value);
     // const strArr = [];
     // const str = event.target.value;
     // strArr.push(str);
     // console.log(str);
     this.setState({inputText: event.target.value})
+    
   }
   
   
   render() {
-    // console.log("submit data")
     return (
       <>
         <div class="main">
-          <Input value={this.state.inputText} changeHandle={this.changehandle}/>
-          <SubmitButton stringValue={this.stringSubmit}/>
+          <Input value={this.state.inputText} OnChangeHandle={this.changeHandle}/>
+          <SubmitButton onHandleSubmit={this.handleSubmit}/>
         </div>
       </>
     );

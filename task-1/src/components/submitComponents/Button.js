@@ -3,7 +3,7 @@ import React from "react";
 class SubmitButton extends React.Component {
   // constructor (props){
   //   super(props);
-  //   // this.state = {submit: ['']}
+    // this.state = {submit: ['']}
     
   // }
 
@@ -13,7 +13,7 @@ class SubmitButton extends React.Component {
 
     return (
       <>
-        <button class="submit-button" onClick={this.props.stringValue}>Submit</button>
+        <button class="submit-button" onClick={this.props.onHandleSubmit}>Submit</button>
       </>
     );
   }
