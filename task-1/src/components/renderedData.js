@@ -1,23 +1,21 @@
 import React, { Component } from "react";
 
 class RenderingData extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-        item : "There is no items in list ....",
-        // itemArray : ["this is items","dsfsafd"],
-    }
-    
-  }
   
-
   render() {
-    
+    const items = this.props.item;
+    // const itemList = items.map((item) => {
+    //   console.log(itemList)
+    // })
+
     return (
       <div class="main">
-        <div class="show-data">{this.state.itemArray}</div>
+        <div class="show-data" >{this.props.item}</div>
+        
+        
       </div>
     );
   }
 }
+
 export default RenderingData;
