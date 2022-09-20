@@ -37,3 +37,19 @@ babel transpilation
 ------v.dom --------------------------------------------------- r.dom------
    faster                                                    slower
    v.Dom changed object changed update r.dom                 screen change in real Dom
+   
+   
+   
+   
+---------------------------------------------------------------------------
+class based component basic project - task-1
+state, props implimentations
+state liftingup , props driling
+   
+   
+   
+   
+   
+   
+   
+   
