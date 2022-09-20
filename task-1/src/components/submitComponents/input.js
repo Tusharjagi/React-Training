@@ -13,7 +13,7 @@ class Input extends React.Component {
     return (
       <>
         <input
-          class="input-data"
+          className="input-data"
           type="text"
           id="text"
           name="text"

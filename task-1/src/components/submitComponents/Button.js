@@ -13,7 +13,7 @@ class SubmitButton extends React.Component {
 
     return (
       <>
-        <button class="submit-button" onClick={this.props.onHandleSubmit}>Submit</button>
+        <button className="submit-button" onClick={this.props.onHandleSubmit}>Submit</button>
       </>
     );
   }

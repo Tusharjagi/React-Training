@@ -37,7 +37,7 @@ class SubmitData extends React.Component {
   render() {
     return (
       <>
-        <div class="main">
+        <div className="main">
           <Input value={this.props.input} OnChangeHandle={this.props.change}/>
           <SubmitButton onHandleSubmit={this.props.handle}/>
         </div>
