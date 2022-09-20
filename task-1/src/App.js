@@ -1,6 +1,6 @@
 import RenderingData from "./components/renderedData";
 import SubmitData from "./components/SubmitData";
-import React from "react";
+import React, { useState } from "react";
 
 class App extends React.Component {
   constructor(props) {
@@ -28,7 +28,9 @@ class App extends React.Component {
     // else{
     //   this.state.itemArray.push(this.state.text)
     // }
-    // this.setState({itemArray: this.state.inputText})
+    // const [itemArray,setItemArrya] = useState([]);
+    // setItemArrya([...itemArray,this.state.inputText]);
+    // this.setState({itemArray: [...this.state.itemArray]})
     // console.log(data);
     // console.log(this.state.itemArray)
     this.setState({ inputText: "" });
