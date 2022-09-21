@@ -11,28 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.main{
-  border: solid black 2px;
-  margin-top: 5px;
-  height: 300px;
-}
-.show-data{
-  text-align: center;
-  margin-top: 10px;
-  font-size: larger;
-}
-.input-data{
-  margin: 100px 0px 0px 250px;
-  width: 400px;
-  height: 60px;
-}
-.submit-button{
-  height: 50px;;
-  width: 90px;
-  background-color: red;
-  color: azure;
-  font-size: 20px;
-  margin: 20px;
-  border-radius: 5px;
-  border-color: burlywood;
-}
