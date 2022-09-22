@@ -21,6 +21,14 @@ code {
   margin-top: 10px;
   font-size: larger;
 }
+.delete-button{
+  background-color: red;
+  color: azure;
+  font-size: 20px;
+  margin: 5px;
+  border-radius: 5px;
+  border-color: burlywood;
+}
 .input-data{
   margin: 100px 0px 0px 250px;
   width: 400px;
@@ -29,10 +37,9 @@ code {
 .submit-button{
   height: 50px;;
   width: 90px;
-  background-color: red;
+  background-color: blue;
   color: azure;
   font-size: 20px;
   margin: 20px;
   border-radius: 5px;
-  border-color: burlywood;
 }

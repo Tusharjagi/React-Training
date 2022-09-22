@@ -22,7 +22,7 @@ function App() {
 
   return (
     <>
-      <Redered />
+      <Redered renderText={showText} item={textArray}/>
       <SubmitData clickHandle={onClickHandler} changeHandle={handleOnChange} Text={inputText}/>
     </>
   );
