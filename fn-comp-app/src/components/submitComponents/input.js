@@ -1,16 +1,12 @@
-// import { useState } from "react";
-
-function Input() {
-    // const [inputText, setInputText] = useState("")
-
+function Input(props) {
     return(
     <input
     className="input-data"
     type="text"
     id="text"
     name="text"
-    // value={value}
-    // onChange={OnChangeHandle}
+    value={props.value}
+    onChange={props.onChanges}
   ></input>
     )
 }

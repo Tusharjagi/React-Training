@@ -1,13 +1,6 @@
-
-
-function Button (){
-
-    function onClickHandler(){
-        console.log("clicked")
-    }
-    
+function Button (props){
     return (
-        <button className="submit-button" onClick={onClickHandler}>Submit</button>
+        <button className="submit-button" onClick={props.clickHandler}>Submit</button>
     )
 }
 export default Button;
