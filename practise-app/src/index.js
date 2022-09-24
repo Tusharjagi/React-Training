@@ -2,29 +2,28 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import PageOne from './router/pageOne';
-import PageTwo from './router/pageTwo';
+// import PageTwo from './router/pageTwo';
 // import UseEffectPrac from './useEffect';
 // import UsePrac from './useEffect/useEffect_1';
 // import App from './App';
 import {
-  BrowserRouter as Router,
-  Switch,
+  createBrowserRouter as Router,
+  RouterProvider,
   Route,
-  Redirect,
 } from "react-router-dom";
+
+const router = Router([
+  {
+    path: "/",
+    element: <PageOne/>
+  }
+
+])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <>
-      <Router>
-        <Switch>
-        <Route exact path="/" component={PageOne} />
-        <Route path="/pageTwo" component={PageTwo}/>
-        <Redirect to="/"/>
-        </Switch>
-      </Router>
-    </>
+    <RouterProvider router={router}/>
     {/* <App /> */}
     {/* <UseEffectPrac/> */}
     {/* <UsePrac/> */}

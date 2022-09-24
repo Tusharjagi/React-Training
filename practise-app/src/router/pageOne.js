@@ -1,10 +1,10 @@
 // import { useNavigate } from "react-router-dom";
-import {useHistory} from "react-router-dom"
-import PageTwo from "./pageTwo";
+// import {useHistory} from "react-router-dom"
+// import PageTwo from "./pageTwo";
 
 
-function PageOne(props) {
-  const history = useHistory();
+function PageOne() {
+  // const history = useHistory();
   // console.log(history);
 
   // const {go, Back, Next} = useHistory();
@@ -24,18 +24,18 @@ function PageOne(props) {
   // };
   // };
 
-  const OnclickHandler = (e) => {
-    // history.pushS("/next")
-    // console.log(history.length)
-    e.preventDefault()
-    history.push();
-    console.log("clicker")
+  // const OnclickHandler = (e) => {
+  //   // history.pushS("/next")
+  //   // console.log(history.length)
+  //   e.preventDefault()
+  //   history.push();
+  //   console.log("clicker")
 
-  }
+  // }
 
   return (
     <div style={{ backgroundColor: "skyblue", padding: "100px" }}>
-      <button onClick={OnclickHandler}>next</button>
+      <button>next</button>
 
     </div>
   );
