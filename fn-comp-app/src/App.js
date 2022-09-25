@@ -19,7 +19,11 @@ function App() {
   };
 
   const handleOnDelete = (itemId) => {
-    console.log("handle On click");
+    // console.log("handle On click");
+    const setText = textArray.filter((i) => i.id !== itemId);
+    // let deleteArray = [...setText,textArray]
+    setTextArray(setText);
+    console.log(setText)
     // const items = this.state.items.filter((c) => c.key !== itemId);
     // useState(setTextArray);
     // console.log(itemId)
@@ -33,7 +37,7 @@ function App() {
         {item}
         <span>
           <button
-            onClick={() => handleOnDelete(item.id)}
+            onClick={() => handleOnDelete(i)}
             className="Delete-button"
           >
             Delete
