@@ -1,0 +1,21 @@
+JSX
+Rendring lists
+Conditional Rendring
+Handling Events
+Updating the State
+Pass Data
+Raise and Handle Events
+Multiple Components in Sync
+Funtional Components
+Lifecycle Hooks => {-Mount (contructor, render, componentDidMount)
+                    -Update (render, componentDidUpdate)
+                    -Unmount (componentWillUnmount)
+                    }
+Single source of truth
+props
+Raising and Handling Events
+Functional Components
+liftUp states
+stateless Component
+Destructing Arguments
+Mounting Phase
