@@ -18,9 +18,39 @@ function App() {
     setInputText("");
   };
 
+  const handleOnDelete = (itemId) => {
+    console.log("handle On click");
+    // const items = this.state.items.filter((c) => c.key !== itemId);
+    // useState(setTextArray);
+    // console.log(itemId)
+    
+  };
+
+  let str = textArray.map((item, i) => {
+    return (
+      <div className="renderDivs" key={i}>
+        {" "}
+        {item}
+        <span>
+          <button
+            onClick={() => handleOnDelete(item.id)}
+            className="Delete-button"
+          >
+            Delete
+          </button>
+        </span>
+      </div>
+    );
+  });
+
   return (
     <>
-      <Redered renderText={showText} item={textArray} />
+      <Redered
+        renderText={showText}
+        item={textArray}
+        onDelete={handleOnDelete}
+        str={str}
+      />
       <SubmitData
         clickHandle={onClickHandler}
         changeHandle={handleOnChange}
