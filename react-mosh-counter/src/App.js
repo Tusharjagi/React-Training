@@ -18,6 +18,7 @@ class App extends Component {
     super(props);
     console.log("App-Contructor");
     // this.state = this.props.somethings;
+    
   }
 
   componentDidMount() {
