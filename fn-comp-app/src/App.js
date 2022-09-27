@@ -20,17 +20,23 @@ function App() {
 
   const handleOnDelete = (itemId) => {
     // console.log("handle On click");
-    const setText = textArray.filter((i) => i.id !== itemId);
+    console.log(itemId);
+    const setText = textArray.filter((i) => {
+      console.log(i);
+      return textArray[itemId] !== i;
+    });
+    // console.log(textArray);
     // let deleteArray = [...setText,textArray]
-    setTextArray(setText);
     console.log(setText)
+    setTextArray(setText);
+    
     // const items = this.state.items.filter((c) => c.key !== itemId);
     // useState(setTextArray);
     // console.log(itemId)
     
   };
 
-  let str = textArray.map((item, i) => {
+  let str = textArray.map((item,i) => {
     return (
       <div className="renderDivs" key={i}>
         {" "}
