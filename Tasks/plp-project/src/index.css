@@ -11,3 +11,64 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.bg {
+  background-color: #7D8035;
+  color: white;
+}
+
+.logo {
+  height: 50px;
+  width: 60px;
+  margin-left: 20px;
+}
+
+.container-data {
+  margin: 4% 0% 0% 18%;
+  padding: 10px 10px 10px 10px;
+}
+
+.Card-style {
+  width: 18rem;
+  margin: 0px 20px 20px 0px;
+  height: 700px;
+}
+
+.search-pro {
+  background-color: #E87334;
+  color: white;
+  margin: 0px 20px 0px 0px;
+  border-radius: 12px;
+}
+
+.Product-search {
+  border-radius: 5px;
+}
+
+.shopping {
+  margin: 0px 10px 0px 10px;
+}
+
+.help-icon {
+  margin: 0px 10px 0px 10px;
+}
+
+.shop-button {
+  position: absolute;
+  bottom: 0;
+  background-color: #7D8035;
+  width: 80%
+}
+.rating-start{
+  background-color:#E87334;
+  position: absolute;
+  padding: 5px;
+  border-radius: 8px; 
+  right: 5px;
+  top: 1px;
+}
+.price-tag{
+  position: absolute;
+  bottom: 4%;
+  padding-left: 30%;
+}
