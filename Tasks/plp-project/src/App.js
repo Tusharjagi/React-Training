@@ -4,23 +4,20 @@ import TopNavBar from "./components/navBar";
 import CardComponents from "./components/Cards";
 
 function App() {
-  // console.log(ProductApi);
   const [list, setList] = useState([]);
-  // console.log(list[5].id)
-  // const [loading, setLoading] = useState();
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
-    // allLists();
-    const promise = getProducts();
+    const promise = getProducts(list);
     promise.then((data) => setList(data));
-    // console.log(data);
-    // getProducts();
+    setTimeout(() =>  {
+      setLoading(false);
+    },2000)
   }, []);
 
   return (
     <>
       <TopNavBar />
-      <CardComponents lists={list}/>
-      
+      <CardComponents lists={list} loadings={loading} />
     </>
   );
 }

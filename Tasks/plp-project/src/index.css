@@ -15,6 +15,7 @@ code {
 .bg {
   background-color: #7D8035;
   color: white;
+  font-size: 20px;
 }
 
 .logo {
@@ -31,7 +32,7 @@ code {
 .Card-style {
   width: 18rem;
   margin: 0px 20px 20px 0px;
-  height: 700px;
+  height: 550px;
 }
 
 .search-pro {
@@ -59,16 +60,30 @@ code {
   background-color: #7D8035;
   width: 80%
 }
-.rating-start{
-  background-color:#E87334;
+
+.rating-start {
+  background-color: #E87334;
   position: absolute;
   padding: 5px;
-  border-radius: 8px; 
+  border-radius: 8px;
   right: 5px;
-  top: 1px;
+  color: whitesmoke;
 }
-.price-tag{
+
+.price-tag {
   position: absolute;
-  bottom: 4%;
+  bottom: 5%;
   padding-left: 30%;
+}
+
+.title-text {
+  position: absolute;
+  text-align: center;
+  bottom: 12%;
+}
+
+.images {
+  position: absolute;
+  height: 350px;
+  padding-top: 20px;
 }

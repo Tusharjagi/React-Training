@@ -9,7 +9,6 @@ const TopNavBar = () => {
     return (
         <>
         <Navbar className='bg'>
-          
         <Navbar.Brand href="#home"><Image className='logo' src={process.env.PUBLIC_URL + "Logo.webp"}/></Navbar.Brand>
         <Container>
           <Nav className="me-auto" >
