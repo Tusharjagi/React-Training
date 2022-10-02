@@ -87,3 +87,37 @@ code {
   height: 350px;
   padding-top: 20px;
 }
+.desc-image{
+  margin-top: 30%;
+}
+.desc-decription{
+  margin-top:12% ;
+  margin-left: 20%;
+  /* background-color: #7D8035; */
+}
+.desc-price{
+  margin-top: 10%;
+  margin-left: 50%;
+}
+.add-to-cart{
+  margin-top: 10%;
+  margin-left: 40%;
+  padding: 10px;
+  background-color: #E87334;
+  border-color: #E87334;
+}
+.add-to-cart:hover{
+  background-color: #7D8035;
+  border-color:  darkgreen;
+}
+.buy-now{
+  margin-top: 10%;
+  margin-left: 5%;
+  padding: 10px;
+  background-color: #E87334;
+  border-color: #E87334;
+}
+.buy-now:hover{
+  background-color: #7D8035;
+  border-color:  darkgreen;
+}

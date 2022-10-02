@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import getProducts from "./services/api";
-import TopNavBar from "./components/navBar";
-import CardComponents from "./components/Cards";
+import TopNavBar from "./components/plp/navBar";
+import CardComponents from "./components/plp/Cards";
+import ProductDesc from "./components/pdp/productDesc";
 
 function App() {
   const [list, setList] = useState([]);
@@ -11,13 +12,14 @@ function App() {
     promise.then((data) => setList(data));
     setTimeout(() =>  {
       setLoading(false);
-    },2000)
+    },1500)
   }, []);
 
   return (
     <>
       <TopNavBar />
       <CardComponents lists={list} loadings={loading} />
+      {/* <ProductDesc/> */}
     </>
   );
 }
