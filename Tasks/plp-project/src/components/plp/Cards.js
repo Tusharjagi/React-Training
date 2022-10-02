@@ -4,29 +4,42 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import StarRateIcon from "@mui/icons-material/StarRate";
 import Loading from "./loding";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import productDesc from "../pdp/productDesc";
 
 const CardComponents = (props) => {
-  const displayData = props.lists.map((items) => {
+
+  const displayData = props.lists.map((items,i) => {
     const titles = items.title;
     const prices = items.price;
     const ratings = items.rating.rate;
     const images = items.image;
     const itemId = items.id;
+    // console.log(i);
+    // console.log(props.shopHandler);
+
+    
+
     return (
       <>
-        <Card className="Card-style" key={itemId}>
-          <div className="images">
-          <Card.Img  src={images} />
+      {/* <BrowserRouter>
+        <Routes>
+          <Route path="products"/ >
+        </Routes>
+      </BrowserRouter> */}
+      <Card className="Card-style" key={i}>
+          <div  className="images">
+          <Card.Img src={images} />
           </div>
           <Card.Body>
             <Card.Title className="title-text" >{titles}</Card.Title>
-            <Card.Text className="price-tag">$ {prices}</Card.Text>
+            <Card.Text  className="price-tag">$ {prices}</Card.Text>
             <div>
               <div className="rating-start">
                 {" "}
                 <StarRateIcon /> {ratings}
               </div>
-              <Button className="shop-button" variant="success">
+              <Button onClick={props.shopHandle} value={itemId} className="shop-button" variant="success">
                 Shop
               </Button>
             </div>
@@ -35,7 +48,6 @@ const CardComponents = (props) => {
       </>
     );
   });
-  console.log(props.loadings)
   const renderCheck = props.loadings ? (
     <Loading />
   ) : (

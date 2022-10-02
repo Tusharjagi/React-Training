@@ -12,7 +12,7 @@ const TopNavBar = () => {
         <Navbar.Brand href="#home"><Image className='logo' src={process.env.PUBLIC_URL + "Logo.webp"}/></Navbar.Brand>
         <Container>
           <Nav className="me-auto" >
-          <Nav.Link className='bg' href="#">Home</Nav.Link>
+          <Nav.Link className='bg' href="/">Home</Nav.Link>
             <Nav.Link className='bg' href="/products">Products</Nav.Link>
           </Nav>
           <input className='Product-search' type="search" placeholder="Products"/>
