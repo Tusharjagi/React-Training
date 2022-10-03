@@ -9,7 +9,7 @@ import productDesc from "../pdp/productDesc";
 
 const CardComponents = (props) => {
 
-  const displayData = props.lists.map((items,i) => {
+  const displayData = props.lists.map((items,index) => {
     const titles = items.title;
     const prices = items.price;
     const ratings = items.rating.rate;
@@ -17,22 +17,14 @@ const CardComponents = (props) => {
     const itemId = items.id;
     // console.log(i);
     // console.log(props.shopHandler);
-
-    
-
     return (
       <>
-      {/* <BrowserRouter>
-        <Routes>
-          <Route path="products"/ >
-        </Routes>
-      </BrowserRouter> */}
-      <Card className="Card-style" key={i}>
+      <Card className="Card-style" key={index}>
           <div  className="images">
           <Card.Img src={images} />
           </div>
           <Card.Body>
-            <Card.Title className="title-text" >{titles}</Card.Title>
+            <Card.Title className="title-text">{titles}</Card.Title>
             <Card.Text  className="price-tag">$ {prices}</Card.Text>
             <div>
               <div className="rating-start">

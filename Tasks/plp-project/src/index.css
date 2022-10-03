@@ -91,9 +91,14 @@ code {
   margin-top: 30%;
 }
 .desc-decription{
-  margin-top:12% ;
+  margin-top:5% ;
   margin-left: 20%;
   /* background-color: #7D8035; */
+}
+.desc-detail{
+  /* text-align: center; */
+  margin-top:12% ;
+  margin-left: 50%;
 }
 .desc-price{
   margin-top: 10%;

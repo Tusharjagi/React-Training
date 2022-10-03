@@ -13,7 +13,7 @@ function App() {
     promise.then((data) => setList(data));
     setTimeout(() =>  {
       setLoading(false);
-    })
+    },2000)
   }, []);
 
   const onShopHandler = (e) => {
@@ -21,7 +21,9 @@ function App() {
     // history.pushState()
     const itemValue = e.target.value
     console.log(itemValue)
+    // return itemValue;
     // <BrowserRouter></BrowserRouter>
+    // return itemValue
   }
 
   return (
@@ -29,8 +31,9 @@ function App() {
       <TopNavBar />
       <BrowserRouter >
         <Routes>
-          <Route path="/" element={<div>Home page</div>}/>    
-          <Route path="/products" element={<CardComponents lists={list} loadings={loading} shopHandle={onShopHandler} />}/>
+          {/* <Route path="/" element={<div>Home page</div>}/>     */}
+          <Route path="/" element={<CardComponents lists={list} loadings={loading} shopHandle={onShopHandler} />}/>
+          <Route path="/3" element={<ProductDesc lists={list}/>}/>
         </Routes>
       </BrowserRouter>
       
