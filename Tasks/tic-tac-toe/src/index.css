@@ -5,9 +5,88 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #16213E;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.app-header {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    background-color: #131A28;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading-text {
+    color: #B25068;
+    font-size: 42px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 50px;
+}
+
+.square {
+    min-width: 100px;
+    min-height: 100px;
+    font-size: 64px;
+    text-align: center;
+    color: #E94560;
+    font-weight: bolder;
+    padding: 30px;
+}
+
+.fc-aqua {
+    color: #E94560;
+}
+
+.fc-white {
+    color: white;
+}
+
+.fw-600 {
+    font-weight: bolder;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.b-bottom-right {
+    border-right: 15px solid #790252;
+    border-bottom: 15px solid #790252;
+}
+
+.b-bottom {
+    border-bottom: 15px solid #790252;
+}
+
+.b-right {
+    border-right: 15px solid #790252;
+}
+
+.clear-button {
+    width: max-content;
+    padding: 10px;
+    background-color: #51557E;
+    color: white;
+    font-size: medium;
+    margin-top: 100px;
+    margin-left: 40%;
 }

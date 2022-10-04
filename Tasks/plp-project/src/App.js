@@ -24,7 +24,7 @@ function App() {
     const itemValue = e.target.value;
     // const itemValue = 9;
     // const fix = 
-    setItemId([...itemId,itemValue])
+    // setItemId([...itemId,itemValue])
     // console.log(itemValue)
     // console.log(itemId);
   }

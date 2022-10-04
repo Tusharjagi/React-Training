@@ -30,9 +30,9 @@ const productDesc = (props) => {
 
 
   // console.log(props.itemsIds)
-  console.log(props.itemsIds)
-  // console.log(props.lists[props.itemsIds])
-
+  // console.log(props.itemsIds)
+  // console.log(props.lists[4].title)
+  // console.log(props.lists[itemsIds])
 
 
 
