@@ -18,7 +18,7 @@ const TopNavBar = () => {
             <Nav.Link className="bg" href="/">
               Home
             </Nav.Link>
-            <Nav.Link className="bg" href="/">
+            <Nav.Link className="bg" href="/products">
               Products
             </Nav.Link>
           </Nav>

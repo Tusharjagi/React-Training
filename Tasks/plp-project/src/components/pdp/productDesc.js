@@ -16,16 +16,27 @@ const productDesc = (props) => {
   // const prices = PDP.price;
   // console.log(images);
   // const images = PDP.image;
-
   // console.log(PDP.image)
   // const images = items.image;
   // const descriptions = items.description;
   // const prices = items.price;
   // console.log(items)
   // console.log(props.shopHandle);
-
   // console.log(props.lists.image)
-  console.log(props.lists);
+
+  // const itemsId = props.itemsIds;
+  // console.log(props.itemsIds)
+  // console.log(props.lists[itemsId])
+
+
+  // console.log(props.itemsIds)
+  console.log(props.itemsIds)
+  // console.log(props.lists[props.itemsIds])
+
+
+
+
+
   return (
     <>
       <Container>
