@@ -6,7 +6,7 @@ function App() {
   const [gameState, updateGameState] = useState(initialState);
   const [xChance, updateXChance] = useState(false);
   const onSquareClicked = (index) => {
-      let Strings = Array.from(gameState);
+      let Strings = [...gameState];
       Strings[index]=xChance ? "X" : "0";
       updateGameState(Strings);
       updateXChance(!xChance);

@@ -18,7 +18,6 @@ const CardComponents = (props) => {
     // console.log(i);
     // console.log(props.shopHandler);
     return (
-      <>
       <Card className="Card-style" key={itemId}>
           <div  className="images">
           <Card.Img src={images} />
@@ -37,7 +36,6 @@ const CardComponents = (props) => {
             </div>
           </Card.Body>
         </Card>
-      </>
     );
   });
   const renderCheck = props.loadings ? (
