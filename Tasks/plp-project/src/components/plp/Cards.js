@@ -4,10 +4,25 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import StarRateIcon from "@mui/icons-material/StarRate";
 import Loading from "./loding";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link,
+  Navigate,
+  useNavigate,
+} from "react-router-dom";
 import productDesc from "../pdp/productDesc";
 
 const CardComponents = (props) => {
+  const navigate = useNavigate();
+
+  const productItemPage = (e) => {
+    // const itemNo = e;
+    navigate(e);
+    // <Navigate to={e}/>
+    // console.log(e);
+  };
 
   const displayData = props.lists.map((items) => {
     const titles = items.title;
@@ -19,23 +34,28 @@ const CardComponents = (props) => {
     // console.log(props.shopHandler);
     return (
       <Card className="Card-style" key={itemId}>
-          <div  className="images">
+        <div className="images">
           <Card.Img src={images} />
-          </div>
-          <Card.Body>
-            <Card.Title className="title-text">{titles}</Card.Title>
-            <Card.Text  className="price-tag">$ {prices}</Card.Text>
-            <div>
-              <div className="rating-start">
-                {" "}
-                <StarRateIcon /> {ratings}
-              </div>
-              <Button onClick={props.shopHandle} value={itemId} className="shop-button" variant="success">
-                Shop
-              </Button>
+        </div>
+        <Card.Body>
+          <Card.Title className="title-text">{titles}</Card.Title>
+          <Card.Text className="price-tag">$ {prices}</Card.Text>
+          <div>
+            <div className="rating-start">
+              {" "}
+              <StarRateIcon /> {ratings}
             </div>
-          </Card.Body>
-        </Card>
+            <Button
+              onClick={(e) => productItemPage(e.target.value)}
+              value={itemId}
+              className="shop-button"
+              variant="success"
+            >
+              Shop
+            </Button>
+          </div>
+        </Card.Body>
+      </Card>
     );
   });
   const renderCheck = props.loadings ? (

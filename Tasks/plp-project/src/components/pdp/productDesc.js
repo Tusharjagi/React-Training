@@ -50,9 +50,7 @@ const productDesc = (props) => {
           <Col xs={9}>
             <Card.Body>
             <Card.Text className="desc-detail">
-                <h4>
                   Description
-                </h4>
               </Card.Text>
               <Card.Text className="desc-decription">
                 <span>
