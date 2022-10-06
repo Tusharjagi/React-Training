@@ -4,22 +4,16 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import StarRateIcon from "@mui/icons-material/StarRate";
 import Loading from "./loding";
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Link,
-  Navigate,
-  useNavigate,
-} from "react-router-dom";
-import productDesc from "../pdp/productDesc";
+import { useNavigate } from "react-router-dom";
 
 const CardComponents = (props) => {
   const navigate = useNavigate();
 
+ 
   const productItemPage = (e) => {
     // const itemNo = e;
     navigate(e);
+    // console.log(e)
     // <Navigate to={e}/>
     // console.log(e);
   };
@@ -46,7 +40,13 @@ const CardComponents = (props) => {
               <StarRateIcon /> {ratings}
             </div>
             <Button
-              onClick={(e) => productItemPage(e.target.value)}
+              onClick={
+                (e) => {
+                  props.ItemsPage(e);
+                  productItemPage(e.target.value);
+                  // props.onShopHandler(e)
+                } /*  */
+              }
               value={itemId}
               className="shop-button"
               variant="success"

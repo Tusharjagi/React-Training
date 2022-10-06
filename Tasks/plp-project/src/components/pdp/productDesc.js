@@ -3,36 +3,16 @@ import Card from "react-bootstrap/Card";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 const productDesc = (props) => {
-  // console.log(props.lists.image)
-  // const images = props.lists.image;
-  // console.log(images.images)
-  // const descriptions = props.lists.description;
-  // const prices = props.lists.price;
-  // console.log(props.lists.image)
-  // // console.log(props.lists[7].image)
-  // const PDP = props.lists[4];
-  // const images = PDP.image;
-  // const descriptions = PDP.description;
-  // const prices = PDP.price;
-  // console.log(images);
-  // const images = PDP.image;
-  // console.log(PDP.image)
-  // const images = items.image;
-  // const descriptions = items.description;
-  // const prices = items.price;
-  // console.log(items)
-  // console.log(props.shopHandle);
-  // console.log(props.lists.image)
 
-  // const itemsId = props.itemsIds;
-  // console.log(props.itemsIds)
-  // console.log(props.lists[itemsId])
+  const productId = props.itemId;
 
+  // console.log(props.itemId)
 
-  // console.log(props.itemsIds)
-  // console.log(props.itemsIds)
+  const descriptions = props.lists[productId - 1].description;
+  const images = props.lists[productId - 1].image;
+  const prices = props.lists[productId - 1].price;
+
   // console.log(props.lists[4].title)
-  // console.log(props.lists[itemsIds])
 
 
 
@@ -44,7 +24,7 @@ const productDesc = (props) => {
           <Col>
             <Card.Img
               className="desc-image"
-              src={"https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg"}
+              src={images}
             />
           </Col>
           <Col xs={9}>
@@ -54,15 +34,12 @@ const productDesc = (props) => {
               </Card.Text>
               <Card.Text className="desc-decription">
                 <span>
-                  The color could be slightly different between on the screen
-                  and in practice. Please note that body builds vary by
-                  person, therefore, detailed size information should be
-                  reviewed below on the product description."
+                  {descriptions}
                 </span>
               </Card.Text>
               <Card.Title className="desc-price">
               <span>Price </span>
-                <span>$ 200</span>
+                <span>$ {prices}</span>
               </Card.Title>
             </Card.Body>
             <Button className="add-to-cart" variant="success">
