@@ -15,7 +15,7 @@ function App() {
     promise.then((data) => setList(data));
     setTimeout(() =>  {
       setLoading(false);
-    })
+    },1500)
   }, []);
   
 
