@@ -4,7 +4,8 @@ import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import HelpIcon from "@mui/icons-material/Help";
-import { BrowserRouter , Link } from "react-router-dom";
+import { BrowserRouter , Link, Outlet } from "react-router-dom";
+import { valueToPercent } from "@mui/base";
 
 const TopNavBar = () => {
   return (
@@ -17,8 +18,10 @@ const TopNavBar = () => {
           <Nav className="me-auto">
             {/* <a className="bg" href="/">Home </a> */}
             {/* <NavLink> */}
-            <Link to="/">Home</Link>
-            {/* <a href="/">Home</a> */}
+            {/* <Link to="/" >Home</Link>
+            <Link to="/products" >Product</Link> */}
+            
+            <a href="/">Home</a>
             <a href="/products">Products </a>
             {/* </NavLink> */}
             {/* <Link to="/">Home</Link> */}
@@ -33,7 +36,9 @@ const TopNavBar = () => {
             {/* <Nav.Link className="bg" href="/products">
             Products
           </Nav.Link> */}
+          
           </Nav>
+          {/* <Outlet/> */}
           <input
             className="Product-search"
             type="search"
@@ -43,6 +48,7 @@ const TopNavBar = () => {
           <AddShoppingCartIcon className="shopping" />
           <HelpIcon className="help-icon" />
         </Container>
+      
       </Navbar>
     </BrowserRouter>
   );
