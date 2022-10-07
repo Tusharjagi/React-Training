@@ -1,9 +1,7 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 const productDesc = (props) => {
-
   const productId = props.itemId;
 
   // console.log(props.itemId)
@@ -14,31 +12,20 @@ const productDesc = (props) => {
 
   // console.log(props.lists[4].title)
 
-
-
-
   return (
-    <>
       <Container>
         <Row>
           <Col>
-            <Card.Img
-              className="desc-image"
-              src={images}
-            />
+            <Card.Img className="desc-image" src={images} />
           </Col>
           <Col xs={9}>
             <Card.Body>
-            <Card.Text className="desc-detail">
-                  Description
-              </Card.Text>
+              <Card.Text className="desc-detail">Description</Card.Text>
               <Card.Text className="desc-decription">
-                <span>
-                  {descriptions}
-                </span>
+                <span>{descriptions}</span>
               </Card.Text>
               <Card.Title className="desc-price">
-              <span>Price </span>
+                <span>Price </span>
                 <span>$ {prices}</span>
               </Card.Title>
             </Card.Body>
@@ -51,7 +38,6 @@ const productDesc = (props) => {
           </Col>
         </Row>
       </Container>
-    </>
   );
 };
 

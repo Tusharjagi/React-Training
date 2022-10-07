@@ -4,23 +4,35 @@ import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import HelpIcon from "@mui/icons-material/Help";
-// import { NavLink } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 const TopNavBar = () => {
   return (
-    <>
+    <BrowserRouter>
       <Navbar className="bg">
         <Navbar.Brand href="#home">
           <Image className="logo" src={process.env.PUBLIC_URL + "Logo.webp"} />
         </Navbar.Brand>
         <Container>
           <Nav className="me-auto">
-            <Nav.Link className="bg" href="/">
-              Home
-            </Nav.Link>
-            <Nav.Link className="bg" href="/products">
-              Products
-            </Nav.Link>
+            {/* <a className="bg" href="/">Home </a> */}
+            {/* <NavLink> */}
+            {/* <Link to="">Home</Link> */}
+            <a href="/">Home</a>
+            <a href="/products">Products </a>
+            {/* </NavLink> */}
+            {/* <Link to="/">Home</Link> */}
+            {/* <Nav.Link className="bg" href="/">
+            Home
+          </Nav.Link> */}
+            {/* <NavLink>
+              <Link to="/products">
+                  Products
+              </Link>
+          </NavLink> */}
+            {/* <Nav.Link className="bg" href="/products">
+            Products
+          </Nav.Link> */}
           </Nav>
           <input
             className="Product-search"
@@ -32,7 +44,7 @@ const TopNavBar = () => {
           <HelpIcon className="help-icon" />
         </Container>
       </Navbar>
-    </>
+    </BrowserRouter>
   );
 };
 

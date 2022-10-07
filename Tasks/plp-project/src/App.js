@@ -8,7 +8,7 @@ import { BrowserRouter, Routes, Route, Link, Navigate, useNavigate } from "react
 function App() {
   const [list, setList] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [itemId, setItemId] = useState([]);
+  const [itemId, setItemId] = useState();
   // console.log(itemId)
   useEffect(() => {
     const promise = getProducts(list);
@@ -19,9 +19,8 @@ function App() {
   }, []);
   
 
-  const itempages = (e) => {
-    const targetValue = e.target.value;
-    setItemId(...targetValue)
+  const targetValues = (e) => {
+    setItemId(...e.target.value)
     // console.log(targetValue);
   }
 
@@ -31,7 +30,7 @@ function App() {
       <BrowserRouter >
         <Routes>
           <Route path="/" element={<div>Home page</div>}/>    
-          <Route path="/products" element={<CardComponents lists={list} loadings={loading} ItemsPage={(e)=>itempages(e)} />}/>
+          <Route path="/products" element={<CardComponents lists={list} loadings={loading} targetValue={(e)=>targetValues(e)} />}/>
           <Route path={"/products/:productsId"} element={<ProductDesc lists={list} itemId={itemId} />}/>
         </Routes>
       </BrowserRouter>

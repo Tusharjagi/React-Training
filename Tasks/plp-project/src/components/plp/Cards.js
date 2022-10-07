@@ -42,7 +42,7 @@ const CardComponents = (props) => {
             <Button
               onClick={
                 (e) => {
-                  props.ItemsPage(e);
+                  props.targetValue(e);
                   productItemPage(e.target.value);
                   // props.onShopHandler(e)
                 } /*  */
