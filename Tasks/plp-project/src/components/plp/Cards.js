@@ -13,7 +13,7 @@ const CardComponents = (props) => {
   const productItemPage = (e) => {
     // const itemNo = e;
     navigate(e);
-    // console.log(e)
+    console.log(e)
     // <Navigate to={e}/>
     // console.log(e);
   };

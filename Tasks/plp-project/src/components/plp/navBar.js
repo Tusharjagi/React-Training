@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import HelpIcon from "@mui/icons-material/Help";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter , Link } from "react-router-dom";
 
 const TopNavBar = () => {
   return (
@@ -17,8 +17,8 @@ const TopNavBar = () => {
           <Nav className="me-auto">
             {/* <a className="bg" href="/">Home </a> */}
             {/* <NavLink> */}
-            {/* <Link to="">Home</Link> */}
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
+            {/* <a href="/">Home</a> */}
             <a href="/products">Products </a>
             {/* </NavLink> */}
             {/* <Link to="/">Home</Link> */}

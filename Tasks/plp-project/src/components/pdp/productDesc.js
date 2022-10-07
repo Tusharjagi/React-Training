@@ -1,8 +1,13 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
+import { useParams } from "react-router-dom";
 
-const productDesc = (props) => {
+const ProductDesc = (props) => {
   const productId = props.itemId;
+
+  const params = useParams();
+  
+  console.log(params)
 
   // console.log(props.itemId)
 
@@ -41,4 +46,4 @@ const productDesc = (props) => {
   );
 };
 
-export default productDesc;
+export default ProductDesc;
