@@ -1,9 +1,10 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
-import { Outlet, useParams } from "react-router-dom";
+import {useParams } from "react-router-dom";
 
 const ItemPage = (props) => {
   const params = useParams();
+  // console.log(params)
   const descriptions = props.lists[params.itemId - 1].description;
   const images = props.lists[params.itemId - 1].image;
   const prices = props.lists[params.itemId - 1].price;

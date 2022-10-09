@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import HelpIcon from "@mui/icons-material/Help";
-import { BrowserRouter, Link, Outlet, NavLink } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const TopNavBar = () => {
   return (
