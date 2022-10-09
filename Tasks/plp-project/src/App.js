@@ -14,7 +14,7 @@ function App() {
     promise.then((data) => setList(data));
     setTimeout(() =>  {
       setLoading(false);
-    })
+    },1500)
   }, []);
 
   return (
@@ -22,7 +22,7 @@ function App() {
       <TopNavBar />
       <BrowserRouter >
         <Routes>
-          <Route path="/" element={<div>Home page</div>}/>    
+          <Route path="/" end element={<div>Home page</div>}/>    
           <Route path="/products" element={<CardComponents lists={list} loadings={loading}/>} />
           <Route path={"/products/:itemId"} element={<ItemPage lists={list} />}/>
         </Routes>

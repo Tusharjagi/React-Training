@@ -5,7 +5,6 @@ import Image from "react-bootstrap/Image";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import HelpIcon from "@mui/icons-material/Help";
 import { BrowserRouter , Link, Outlet } from "react-router-dom";
-import { valueToPercent } from "@mui/base";
 
 const TopNavBar = () => {
   return (
@@ -16,15 +15,15 @@ const TopNavBar = () => {
         </Navbar.Brand>
         <Container>
           <Nav className="me-auto">
-            {/* <a className="bg" href="/">Home </a> */}
-            {/* <NavLink> */}
-            {/* <Link to="/" >Home</Link>
-            <Link to="/products" >Product</Link> */}
+
+
+            <Link to="/">Home</Link>
+            <Link to="/products" >Product</Link>
             
-            <a href="/">Home</a>
-            <a href="/products">Products </a>
-            {/* </NavLink> */}
-            {/* <Link to="/">Home</Link> */}
+            {/* <a href="/">Home</a>
+            <a href="/products">Products </a> */}
+
+
             {/* <Nav.Link className="bg" href="/">
             Home
           </Nav.Link> */}
