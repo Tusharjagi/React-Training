@@ -18,16 +18,14 @@ function App() {
   }, []);
 
   return (
-    <>
-      <TopNavBar />
       <BrowserRouter >
+      <TopNavBar />
         <Routes>
           <Route path="/" end element={<div>Home page</div>}/>    
           <Route path="/products" element={<CardComponents lists={list} loadings={loading}/>} />
-          <Route path={"/products/:itemId"} element={<ItemPage lists={list} />}/>
+            <Route path="/products/:itemId" element={<ItemPage lists={list} />}/>
         </Routes>
       </BrowserRouter>
-    </>
   );
 }
 

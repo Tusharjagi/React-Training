@@ -8,6 +8,7 @@ const Contact = () => {
         <nav>
             <ul>
                 <li>
+                  
                     <NavLink to={"/"}>Home</NavLink>
                 </li>
                 <li>
