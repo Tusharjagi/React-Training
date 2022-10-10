@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import StarRateIcon from "@mui/icons-material/StarRate";
-import Loading from "./loding";
+import Loading from "./loading";
 import { useNavigate } from "react-router-dom";
 import getProducts from "../../services/api";
 import { useState, useEffect } from "react";
