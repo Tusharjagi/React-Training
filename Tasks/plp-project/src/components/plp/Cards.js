@@ -5,13 +5,27 @@ import Row from "react-bootstrap/Row";
 import StarRateIcon from "@mui/icons-material/StarRate";
 import Loading from "./loding";
 import { useNavigate } from "react-router-dom";
+import getProducts from "../../services/api";
+import { useState, useEffect } from "react";
 
-const CardComponents = (props) => {
+const CardComponents = () => {
+  const [list, setList] = useState([]);
+  const [loading, setLoading] = useState(true);
+
   const navigate = useNavigate();
   const handleOnClickButton = (e) => {
     navigate(e.target.value);
   };
-  const displayItems = props.lists.map((items) => {
+
+  useEffect(() => {
+    const promise = getProducts(list);
+    promise.then((data) => setList(data));
+    setTimeout(() => {
+      setLoading(false);
+    },1500);
+  }, []);
+
+  const displayItems = list.map((items) => {
     const titles = items.title;
     const prices = items.price;
     const ratings = items.rating.rate;
@@ -43,7 +57,7 @@ const CardComponents = (props) => {
       </Card>
     );
   });
-  const renderCheck = props.loadings ? (
+  const renderCheck = loading ? (
     <Loading />
   ) : (
     <Container className="container-data">
