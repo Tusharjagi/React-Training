@@ -2,11 +2,6 @@ const Home = (props) => {
   console.log(props.cardData)
   return (
     <div className="App">
-      <div >
-        <span className="cart-count">{props.cardData.length}</span>
-        <img className="add-to-cart" src={process.env.PUBLIC_URL+"cart.png"} />
-      </div>
-      <h1>Home Component</h1>
       <div className="cart-wrapper">
         <div className="img-wapper-item">
           <img src="https://picsum.photos/id/237/100" />

@@ -27,17 +27,20 @@ button{
 }
 .add-to-cart{
   width: 80px;
-  position: absolute;
-  right: 1%;
-  top: 4%;
+  position: relative;
+  left: 42%;
 }
 .cart-count{
   position: absolute;
   right: 10px;
-  color: black;
+  color:white;
   background-color: red;
   padding: 5px;
   width: 18px;
   border-radius: 50%;
   z-index: 1;
+}
+.nav-bar{
+  padding: 10px;
+  background-color: royalblue
 }
