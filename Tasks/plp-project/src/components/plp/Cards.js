@@ -23,7 +23,7 @@ const CardComponents = () => {
     setTimeout(() => {
       setLoading(false);
     },1500);
-  }, []);
+  }, [list]);
 
   const displayItems = list.map((items) => {
     const titles = items.title;
