@@ -19,7 +19,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <TopNavBar />
+    <TopNavBar />
       <Routes>
         <Route path="/" end element={<div>Home page</div>} />
         <Route

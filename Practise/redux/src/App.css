@@ -1,8 +1,43 @@
 .App {
   text-align: center;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.cart-wrapper{
+  margin: 10%;
+  height: 100px;
+  width: 500px;
+  border: 1px solid gainsboro;
+}
+button{
+  background-color: red;
+  border: 0px;
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+  margin-top: 15px;
+}
+.img-wapper-item{
+  float: left;
+  display: inline block;
+  width: 120px;
+  height: 70px;
+}
+.add-to-cart{
+  width: 80px;
+  position: absolute;
+  right: 1%;
+  top: 4%;
+}
+.cart-count{
+  position: absolute;
+  right: 10px;
+  color: black;
+  background-color: red;
+  padding: 5px;
+  width: 18px;
+  border-radius: 50%;
+  z-index: 1;
 }
