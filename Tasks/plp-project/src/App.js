@@ -5,6 +5,8 @@ import CardComponents from "./components/plp/Cards";
 import ItemPage from "./components/pdp/ItemPages";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+// const CardComponents = React.lazy(() => import('./components/plp/Cards'));
+
 function App() {
   const [list, setList] = useState([]);
   const [loading, setLoading] = useState(true);

@@ -4,12 +4,10 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import StarRateIcon from "@mui/icons-material/StarRate";
 import Loading from "./loding";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const CardComponents = (props) => {
   const navigate = useNavigate();
-  const navigateByImage = useNavigate();
-
   const handleOnClickButton = (e) => {
     navigate(e.target.value);
   };
@@ -20,8 +18,6 @@ const CardComponents = (props) => {
     const images = items.image;
     const itemId = items.id;
     return (
-      
-      
       <Card className="Card-style" key={itemId}>
         <div className="images">
           <Card.Img src={images} />
@@ -45,7 +41,6 @@ const CardComponents = (props) => {
           </div>
         </Card.Body>
       </Card>
-
     );
   });
   const renderCheck = props.loadings ? (
