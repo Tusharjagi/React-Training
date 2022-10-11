@@ -1,0 +1,12 @@
+
+1. Functional Programming
+2. Fundamental of Redux
+3. Build Redux from scratch
+4. Debugging 
+5. Writing Clean Code
+
+6. Redux Store
+7. Middleware
+8. Calling APIs
+9. Testing Redux apps
+10. Integration with React
