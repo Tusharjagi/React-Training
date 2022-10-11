@@ -22,11 +22,10 @@ const CardComponents = () => {
     promise.then((data) => setList(data));
     setTimeout(() => {
       setLoading(false);
-    },1500);
+    }, 1500);
   }, []);
-  
   const displayLists = list.map((items) => {
-    const {title, price, rating, image, id} = items;
+    const { title, price, rating, image, id } = items;
     return (
       <Card className="Card-style" key={id}>
         <div className="images">
