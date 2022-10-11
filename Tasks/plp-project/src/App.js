@@ -7,7 +7,7 @@ const TopNavBar = React.lazy(() => import("./components/plp/navBar"));
 function App() {
   return (
     <BrowserRouter>
-      <Suspense>
+      <Suspense fallback={<div></div>}>
       <TopNavBar />
         <Routes>
           <Route path="/" element={<div>Home page</div>} />
