@@ -23,30 +23,26 @@ const CardComponents = () => {
     setTimeout(() => {
       setLoading(false);
     },1500);
-  }, [list]);
-
-  const displayItems = list.map((items) => {
-    const titles = items.title;
-    const prices = items.price;
-    const ratings = items.rating.rate;
-    const images = items.image;
-    const itemId = items.id;
+  }, []);
+  
+  const displayLists = list.map((items) => {
+    const {title, price, rating, image, id} = items;
     return (
-      <Card className="Card-style" key={itemId}>
+      <Card className="Card-style" key={id}>
         <div className="images">
-          <Card.Img src={images} />
+          <Card.Img src={image} />
         </div>
         <Card.Body>
-          <Card.Title className="title-text">{titles}</Card.Title>
-          <Card.Text className="price-tag">$ {prices}</Card.Text>
+          <Card.Title className="title-text">{title}</Card.Title>
+          <Card.Text className="price-tag">$ {price}</Card.Text>
           <div>
             <div className="rating-start">
               {" "}
-              <StarRateIcon /> {ratings}
+              <StarRateIcon /> {rating.rate}
             </div>
             <Button
               onClick={(e) => handleOnClickButton(e)}
-              value={itemId}
+              value={id}
               className="shop-button"
               variant="success"
             >
@@ -61,7 +57,7 @@ const CardComponents = () => {
     <Loading />
   ) : (
     <Container className="container-data">
-      <Row>{displayItems}</Row>
+      <Row>{displayLists}</Row>
     </Container>
   );
 
