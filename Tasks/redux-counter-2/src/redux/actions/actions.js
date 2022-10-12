@@ -1,17 +1,18 @@
+import * as action from "./actionsTypes"
 export const increment = () => {
   return {
-    type: "INCREMENT",
+    type: action.INCREMENT,
   };
 };
 
 export const decrement = () => {
   return {
-    type: "DECREMENT",
+    type: action.DECREMENT,
   };
 };
 
 export const reset = () => {
   return {
-    type: "RESET",
+    type: action.RESET,
   };
 };
