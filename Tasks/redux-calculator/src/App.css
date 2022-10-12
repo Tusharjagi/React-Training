@@ -1,38 +1,134 @@
+.header {
+  position: absolute;
+  font-size: 50px;
+  padding-left: 38%;
+}
+
 .App {
-  text-align: center;
+  position: absolute;
+  margin-top: 100px;
+  border: solid 2px gainsboro;
+  padding: 15px;
+  margin-right: 39%;
+  margin-left: 30%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.display {
+  position: absolute;
+  background-color: aqua;
+  border: solid 2px black;
+  padding: 10px 42px 10px 400px;
+  font-size: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.one {
+  position: relative;
+  margin-top: 140px;
+  margin-left: 1px;
+  font-size: 60px;
+  padding: 15px 74px 15px 74px;
+  background-color: bisque;
+  border-color: bisque;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.two {
+  position: relative;
+  margin-top: 140px;
+  margin-left: 1px;
+  font-size: 60px;
+  padding: 15px 74px 15px 74px;
+  background-color: bisque;
+  border-color: bisque;
 }
 
-.App-link {
-  color: #61dafb;
+.three {
+  position: relative;
+  margin-top: 140px;
+  margin-left: 1px;
+  font-size: 60px;
+  padding: 15px 74px 15px 74px;
+  background-color: bisque;
+  border-color: bisque;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.four {
+  position: relative;
+  margin-left: 1px;
+  font-size: 60px;
+  padding: 15px 74px 15px 74px;
+  background-color: bisque;
+  border-color: bisque;
+
+}
+
+.five {
+  position: relative;
+  margin-left: 1px;
+  font-size: 60px;
+  padding: 15px 74px 15px 74px;
+  background-color: bisque;
+  border-color: bisque;
+}
+
+.six {
+  position: relative;
+  margin-left: 1px;
+  font-size: 60px;
+  padding: 15px 74px 15px 74px;
+  background-color: bisque;
+  border-color: bisque;
+}
+
+.seven {
+  position: relative;
+  margin-left: 1px;
+  font-size: 60px;
+  padding: 15px 74px 15px 74px;
+  background-color: bisque;
+  border-color: bisque;
+}
+
+.eight {
+  position: relative;
+  margin-left: 1px;
+  font-size: 60px;
+  padding: 15px 74px 15px 74px;
+  background-color: bisque;
+  border-color: bisque;
+}
+
+.nine {
+  position: relative;
+  margin-left: 1px;
+  font-size: 60px;
+  padding: 15px 74px 15px 74px;
+  background-color: bisque;
+  border-color: bisque;
+}
+
+.zero {
+  position: relative;
+  margin-left: 1px;
+  font-size: 60px;
+  padding: 15px 74px 15px 74px;
+  background-color: bisque;
+  border-color: bisque;
+}
+
+.plus {
+  position: relative;
+  margin-left: 1px;
+  font-size: 60px;
+  padding: 15px 74px 15px 74px;
+  background-color: bisque;
+  border-color: bisque;
+}
+
+.minus {
+  position: relative;
+  margin-left: 1px;
+  font-size: 60px;
+  padding: 15px 81px 15px 80px;
+  background-color: bisque;
+  border-color: bisque;
 }
