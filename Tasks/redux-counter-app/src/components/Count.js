@@ -1,5 +1,7 @@
+import { useSelector } from "react-redux";
 const Count = () => {
-    return ( <div className="count">0</div> );
+    const count = useSelector((state) => state.count);
+    return ( <div className="count">{count}</div> );
 }
  
 export default Count;
