@@ -1,3 +1,61 @@
-.App {
+.header{
+  position: relative;
+  font-size: 40px;
+  font-weight: 400;
+  margin-left: 15px;
+
+}
+.count{
+  position: relative;
+  margin-left: 46%;
+  margin-right: 50%;
+  margin-top: 50px;
+  border-radius: 100px;
+  font-size: 40px;
+  font-weight: 400;
+  background-color: #5C2E7E;
+  color: white;
   text-align: center;
+}
+.header-wrapper{
+  padding: 5px;
+  margin: 12px 42% 0% 40% ;
+  position:relative;
+  background-color: #8BBCCC;
+  text-align: center;
+  border-radius: 15px;
+}
+.increment-button{
+  background-color: #D2001A;
+  border-color: #B73E3E;
+  text-align: center;
+  padding: 0px 40px;
+  color: white;
+  font-size: 80px;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-left: 40%;
+
+}
+.increment-button:hover{
+  background-color: #367E18;
+  border-color: #367E18 ;
+  border-radius: 10px;
+
+}
+.decrement-button{
+  background-color: #D2001A;
+  border-color: #B73E3E;
+  text-align: center;
+  padding: 0px 50px;
+  color: white;
+  font-size: 80px;
+  border-radius: 10px;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+.decrement-button:hover{
+  background-color: #367E18;
+  border-color: #367E18 ;
+  border-radius: 10px;
 }
