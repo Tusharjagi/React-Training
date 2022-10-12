@@ -2,37 +2,80 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.header{
+  position: relative;
+  font-size: 40px;
+  font-weight: 400;
+  margin-left: 5px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.count{
+  position: relative;
+  margin-left: 85%;
+  margin-right: 2%;
+  margin-top: -69px;
+  border-radius: 100px;
+  font-size: 40px;
+  font-weight: 400;
+  background-color: #5C2E7E;
   color: white;
+  text-align: center;
 }
-
-.App-link {
-  color: #61dafb;
+.header-wrapper{
+  padding: 5px;
+  margin: 12px 42% 0px 35% ;
+  position:relative;
+  background-color: #8BBCCC;
+  text-align: center;
+  border-radius: 15px;
 }
+.increment-button{
+  background-color: #D2001A;
+  border-color: #B73E3E;
+  text-align: center;
+  padding: 0px 20px;
+  color: white;
+  font-size: 30px;
+  border-radius: 10px;
+  margin-top: 50px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.increment-button:hover{
+  background-color: #367E18;
+  border-color: #367E18 ;
+  border-radius: 10px;
+
+}
+.decrement-button{
+  background-color: #D2001A;
+  border-color: #B73E3E;
+  text-align: center;
+  padding: 0px 20px;
+  color: white;
+  font-size: 30px;
+  border-radius: 10px;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+.decrement-button:hover{
+  background-color: #367E18;
+  border-color: #367E18 ;
+  border-radius: 10px;
+}
+.reset-button{
+  background-color: #00acd2;
+  border-color: #2137df;
+  text-align: center;
+  padding: 0px 20px;
+  color: white;
+  font-size: 30px;
+  border-radius: 10px;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+.reset-button:hover{
+  background-color: #89e760;
+  border-color: #b4b129 ;
+  border-radius: 10px;
+  color: black;
 }
