@@ -183,11 +183,23 @@
   position: absolute;
   background-color: #1d3849;
   margin-top: 37%;
-  margin-left: 39%;
+  margin-left: 34%;
   font-size: 50px;
   color: whitesmoke;
 }
 
 .calculate:focus {
   background-color: green;
+}
+.clear{
+  position: absolute;
+  background-color: #1d3849;
+  margin-top: 37%;
+  margin-left: 48%;
+  font-size: 50px;
+  color: whitesmoke;
+}
+.clear:focus {
+  background-color: rgb(176, 53, 53);
+  color: black;
 }

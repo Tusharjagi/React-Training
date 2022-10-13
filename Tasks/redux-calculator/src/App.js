@@ -1,5 +1,6 @@
 import "./App.css";
 import Calculate from "./Components/Calculate";
+import Clear from "./Components/Clear";
 import Display from "./Components/Display";
 import Header from "./Components/Header";
 import Eight from "./Components/Numbers/Eight";
@@ -35,6 +36,7 @@ function App() {
         <Plus />
       </div>
       <Calculate />
+      <Clear />
     </>
   );
 }
