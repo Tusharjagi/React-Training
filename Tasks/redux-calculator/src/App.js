@@ -1,4 +1,5 @@
 import './App.css';
+import Calculate from './Components/Calculate';
 import Display from './Components/Display';
 import Header from './Components/Header';
 import Eight from './Components/Numbers/Eight';
@@ -32,6 +33,7 @@ function App() {
       <Zero/>
       <Plus/>
     </div>
+      <Calculate/>
     </>
   );
 }

@@ -2,6 +2,7 @@
   position: absolute;
   font-size: 50px;
   padding-left: 38%;
+
 }
 
 .App {
@@ -14,10 +15,11 @@
 }
 
 .display {
+  font-family: digital-7;
   position: absolute;
-  background-color: aqua;
+  background-color: #a2bbcf;
   border: solid 2px black;
-  padding: 10px 42px 10px 400px;
+  padding: 25px 42px 54px 419px;
   font-size: 100px;
 }
 
@@ -27,8 +29,13 @@
   margin-left: 1px;
   font-size: 60px;
   padding: 15px 74px 15px 74px;
-  background-color: bisque;
-  border-color: bisque;
+  background-color: #205b7a;
+  border-color: whitesmoke;
+  color: whitesmoke;
+}
+
+.one:focus {
+  background-color: #142f44;
 }
 
 .two {
@@ -37,8 +44,13 @@
   margin-left: 1px;
   font-size: 60px;
   padding: 15px 74px 15px 74px;
-  background-color: bisque;
-  border-color: bisque;
+  background-color: #205b7a;
+  border-color: whitesmoke;
+  color: whitesmoke;
+}
+
+.two:focus {
+  background-color: #142f44;
 }
 
 .three {
@@ -47,8 +59,13 @@
   margin-left: 1px;
   font-size: 60px;
   padding: 15px 74px 15px 74px;
-  background-color: bisque;
-  border-color: bisque;
+  background-color: #205b7a;
+  border-color: whitesmoke;
+  color: whitesmoke;
+}
+
+.three:focus {
+  background-color: #142f44;
 }
 
 .four {
@@ -56,9 +73,14 @@
   margin-left: 1px;
   font-size: 60px;
   padding: 15px 74px 15px 74px;
-  background-color: bisque;
-  border-color: bisque;
+  background-color: #205b7a;
+  border-color: whitesmoke;
+  color: whitesmoke;
 
+}
+
+.four:focus {
+  background-color: #142f44;
 }
 
 .five {
@@ -66,8 +88,13 @@
   margin-left: 1px;
   font-size: 60px;
   padding: 15px 74px 15px 74px;
-  background-color: bisque;
-  border-color: bisque;
+  background-color: #205b7a;
+  border-color: whitesmoke;
+  color: whitesmoke;
+}
+
+.five:focus {
+  background-color: #142f44;
 }
 
 .six {
@@ -75,8 +102,13 @@
   margin-left: 1px;
   font-size: 60px;
   padding: 15px 74px 15px 74px;
-  background-color: bisque;
-  border-color: bisque;
+  background-color: #205b7a;
+  border-color: whitesmoke;
+  color: whitesmoke;
+}
+
+.six:focus {
+  background-color: #142f44;
 }
 
 .seven {
@@ -84,8 +116,13 @@
   margin-left: 1px;
   font-size: 60px;
   padding: 15px 74px 15px 74px;
-  background-color: bisque;
-  border-color: bisque;
+  background-color: #205b7a;
+  border-color: whitesmoke;
+  color: whitesmoke;
+}
+
+.seven:focus {
+  background-color: #142f44;
 }
 
 .eight {
@@ -93,8 +130,13 @@
   margin-left: 1px;
   font-size: 60px;
   padding: 15px 74px 15px 74px;
-  background-color: bisque;
-  border-color: bisque;
+  background-color: #205b7a;
+  border-color: whitesmoke;
+  color: whitesmoke;
+}
+
+.eight:focus {
+  background-color: #142f44;
 }
 
 .nine {
@@ -102,8 +144,13 @@
   margin-left: 1px;
   font-size: 60px;
   padding: 15px 74px 15px 74px;
-  background-color: bisque;
-  border-color: bisque;
+  background-color: #205b7a;
+  border-color: whitesmoke;
+  color: whitesmoke;
+}
+
+.nine:focus {
+  background-color: #142f44;
 }
 
 .zero {
@@ -111,8 +158,13 @@
   margin-left: 1px;
   font-size: 60px;
   padding: 15px 74px 15px 74px;
-  background-color: bisque;
-  border-color: bisque;
+  background-color: #205b7a;
+  border-color: whitesmoke;
+  color: whitesmoke;
+}
+
+.zero:focus {
+  background-color: #142f44;
 }
 
 .plus {
@@ -120,8 +172,13 @@
   margin-left: 1px;
   font-size: 60px;
   padding: 15px 74px 15px 74px;
-  background-color: bisque;
-  border-color: bisque;
+  background-color: #205b7a;
+  border-color: whitesmoke;
+  color: whitesmoke;
+}
+
+.plus:focus {
+  background-color: #142f44;
 }
 
 .minus {
@@ -129,6 +186,24 @@
   margin-left: 1px;
   font-size: 60px;
   padding: 15px 81px 15px 80px;
-  background-color: bisque;
-  border-color: bisque;
+  background-color: #205b7a;
+  border-color: whitesmoke;
+  color: whitesmoke;
+}
+
+.minus:focus {
+  background-color: #142f44;
+}
+
+.calculate {
+  position: absolute;
+  background-color: #1d3849;
+  margin-top: 37%;
+  margin-left: 36%;
+  font-size: 80px;
+  color: whitesmoke;
+}
+
+.calculate:focus {
+  background-color: green;
 }
