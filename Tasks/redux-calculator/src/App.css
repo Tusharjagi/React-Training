@@ -88,7 +88,7 @@
   color: whitesmoke;
 }
 
-.five:focus {
+.five:focus ,.six:focus{
   background-color: #142f44;
 }
 
@@ -99,10 +99,6 @@
   background-color: #205b7a;
   border-color: whitesmoke;
   color: whitesmoke;
-}
-
-.six:focus {
-  background-color: #142f44;
 }
 
 .seven {

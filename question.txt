@@ -1,0 +1,8 @@
+let x = ["a","b","c","d"]
+let y = [1,2,3,4]
+
+let newArray = x.map(function(e, i) {
+  return e + "," + y[i];
+});
+
+return [a,1, b,2, c,3,d,4]
