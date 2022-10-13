@@ -1,6 +1,6 @@
-const Minus = () => {
+const Subtract = () => {
     return <button className="minus">-</button>;
   };
   
-  export default Minus;
+  export default Subtract;
   

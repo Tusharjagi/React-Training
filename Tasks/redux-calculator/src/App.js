@@ -13,7 +13,7 @@ import Six from "./Components/Numbers/Six";
 import Three from "./Components/Numbers/Three";
 import Two from "./Components/Numbers/Two";
 import Zero from "./Components/Numbers/Zero";
-import Minus from "./Components/Operators/Minus";
+import Subtract from "./Components/Operators/Subtract";
 import Plus from "./Components/Operators/Plus";
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
         <Seven />
         <Eight />
         <Nine />
-        <Minus />
+        <Subtract />
         <Zero />
         <Plus />
       </div>
