@@ -19,14 +19,13 @@
   position: absolute;
   background-color: #a2bbcf;
   border: solid 2px black;
-  padding: 25px 42px 54px 419px;
+  padding: 26px 42px 54px 415px;
   font-size: 100px;
 }
 
 .one {
   position: relative;
   margin-top: 140px;
-  margin-left: 1px;
   font-size: 60px;
   padding: 15px 74px 15px 74px;
   background-color: #205b7a;
@@ -41,7 +40,6 @@
 .two {
   position: relative;
   margin-top: 140px;
-  margin-left: 1px;
   font-size: 60px;
   padding: 15px 74px 15px 74px;
   background-color: #205b7a;
@@ -56,7 +54,6 @@
 .three {
   position: relative;
   margin-top: 140px;
-  margin-left: 1px;
   font-size: 60px;
   padding: 15px 74px 15px 74px;
   background-color: #205b7a;
@@ -70,7 +67,6 @@
 
 .four {
   position: relative;
-  margin-left: 1px;
   font-size: 60px;
   padding: 15px 74px 15px 74px;
   background-color: #205b7a;
@@ -85,7 +81,6 @@
 
 .five {
   position: relative;
-  margin-left: 1px;
   font-size: 60px;
   padding: 15px 74px 15px 74px;
   background-color: #205b7a;
@@ -99,7 +94,6 @@
 
 .six {
   position: relative;
-  margin-left: 1px;
   font-size: 60px;
   padding: 15px 74px 15px 74px;
   background-color: #205b7a;
@@ -113,7 +107,6 @@
 
 .seven {
   position: relative;
-  margin-left: 1px;
   font-size: 60px;
   padding: 15px 74px 15px 74px;
   background-color: #205b7a;
@@ -127,7 +120,6 @@
 
 .eight {
   position: relative;
-  margin-left: 1px;
   font-size: 60px;
   padding: 15px 74px 15px 74px;
   background-color: #205b7a;
@@ -141,7 +133,6 @@
 
 .nine {
   position: relative;
-  margin-left: 1px;
   font-size: 60px;
   padding: 15px 74px 15px 74px;
   background-color: #205b7a;
@@ -155,7 +146,6 @@
 
 .zero {
   position: relative;
-  margin-left: 1px;
   font-size: 60px;
   padding: 15px 74px 15px 74px;
   background-color: #205b7a;
@@ -169,7 +159,6 @@
 
 .plus {
   position: relative;
-  margin-left: 1px;
   font-size: 60px;
   padding: 15px 74px 15px 74px;
   background-color: #205b7a;
@@ -183,7 +172,6 @@
 
 .minus {
   position: relative;
-  margin-left: 1px;
   font-size: 60px;
   padding: 15px 81px 15px 80px;
   background-color: #205b7a;
