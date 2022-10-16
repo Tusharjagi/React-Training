@@ -1,26 +1,22 @@
 import * as actions from "../actions/actionTypes";
 
-const initialData = {
+const initialState = {
   list: [],
 };
 
-const submitReducer = (state = initialData, action) => {
+const submitReducer = (state = initialState, action) => {
   switch (action.type) {
     case actions.ADD_TODO: {
-      const { id, data } = action.payload;
-
+      const { data } = action.payload;
+      console.log(action.payload) 
       return {
         ...state,
-        data: [
-            {
-                id,
-                data
-            }
-        ],
+        list: [data,],
       };
     }
-    default: return state;
-  }
+    default:
+      return state;
+    }
 };
 
 export default submitReducer;

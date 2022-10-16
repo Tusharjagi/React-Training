@@ -4,17 +4,35 @@ import { addTodo } from "../Redux/actions/action";
 
 const Textarea = () => {
   const dispatch = useDispatch();
-  const [data, setData] = useState("");
+  const [inputText, setInputText] = useState("");
+  const [data, setData] = useState([])
+  console.log(inputText)
+  // console.log(data)
+
+  const handleOnChange = (e) => {
+    setInputText(e.target.value);
+  };
+
+  const handleOnSubmit = () => {
+    setData({data:[...data,setInputText]})
+  }
+
   return (
     <>
       <textarea
-        value={data}
-        onChange={(e) => setData(e.target.value)}
+        value={inputText}
+        onChange={(e) => handleOnChange(e)}
         className="text-area"
         cols="40"
         rows="4"
       ></textarea>
-      <button onClick={() => dispatch(addTodo(data))} className="submit-button">
+      <button
+        onClick={() => {
+          handleOnSubmit()
+          setInputText("");
+        }}
+        className="submit-button"
+      >
         Submit
       </button>
     </>

@@ -2,17 +2,21 @@ import { useSelector } from "react-redux";
 
 const TodoLists = () => {
   const list = useSelector((state) => state.submitReducer.list);
-  console.log(list);
-  // list.map((items,key) => {
-  //   return (
-  //     <div className="todo-lists" key={key}>
-  //       <span>{items.data}</span>
-  //     </div>
-  //   );
-  // });
+  // console.log(list);
+  const displayData = list.map((items,key) => {
+    // console.log(items)
+    return (
+      <div className="todo-lists" key={key}>
+        <span className="list-number">{key})</span>
+        <span>{items}</span>
+      </div>
+    );
+  });
   return (
     <div className="todo-lists">
-      {list.map((items) => <span>{items.list}</span>)}
+      {displayData}
+      {/* {list.map((items) => <span>{items.list}</span>)} */}
+
     </div>
   );
 };
