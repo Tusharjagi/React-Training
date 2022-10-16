@@ -5,18 +5,20 @@ const initialState = {
 };
 
 const submitReducer = (state = initialState, action) => {
+  console.log(state)
   switch (action.type) {
     case actions.ADD_TODO: {
       const { data } = action.payload;
-      console.log(action.payload) 
       return {
-        ...state,
-        list: [data,],
+        list: [
+          ...state.list,
+          data
+        ],
       };
     }
     default:
       return state;
-    }
+  }
 };
 
 export default submitReducer;
