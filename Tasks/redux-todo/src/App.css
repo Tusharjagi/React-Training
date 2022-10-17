@@ -21,7 +21,7 @@
 .todo-lists{
   margin-top: 30px;
   margin-left: 18px;
-  position: absolute;
+  position: relative;
 }
 .list-number{
   margin: 10px;

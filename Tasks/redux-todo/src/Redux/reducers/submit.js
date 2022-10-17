@@ -10,6 +10,7 @@ const submitReducer = (state = initialState, action) => {
     case actions.ADD_TODO: {
       const { data } = action.payload;
       return {
+        ...state,
         list: [
           ...state.list,
           data

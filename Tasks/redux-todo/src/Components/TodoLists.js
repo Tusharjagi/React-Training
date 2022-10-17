@@ -5,7 +5,7 @@ const TodoLists = () => {
   const displayData = list.map((items,key) => {
     return (
       <div className="todo-lists" key={key}>
-        <span className="list-number">{key})</span>
+        <span className="list-number">{key + 1})</span>
         <span>{items}</span>
       </div>
     );
