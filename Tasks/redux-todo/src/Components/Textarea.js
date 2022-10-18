@@ -14,7 +14,7 @@ const Textarea = () => {
     <>
       <textarea
         value={inputText}
-        onChange={(e) => setInputText( e.target.value)}
+        onChange={(e) => setInputText(e.target.value)}
         className="text-area"
         cols="40"
         rows="4"

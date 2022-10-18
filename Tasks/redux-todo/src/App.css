@@ -1,14 +1,20 @@
+.header{
+  text-align: center;
+  font-size: 50px;
+}
 .text-area{
   resize: none;
   font-size: 20px;
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-left: 50px;
+  margin-bottom: 30px;
 }
 
 .submit-button{
   position: absolute;
   font-size: 24px;
   padding: 15px;
-  margin-top: 40px;
+  margin-top: 60px;
   margin-left: 20px;
   background-color: crimson;
   color: whitesmoke;
@@ -19,7 +25,7 @@
   position: absolute;
 }
 .todo-lists{
-  margin-top: 30px;
+  margin-top: 15px;
   margin-left: 18px;
   position: relative;
 }
