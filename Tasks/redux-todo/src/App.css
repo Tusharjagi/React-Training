@@ -6,7 +6,7 @@
   resize: none;
   font-size: 20px;
   margin-top: 40px;
-  margin-left: 50px;
+  margin-left: 35%;
   margin-bottom: 30px;
 }
 
@@ -16,7 +16,10 @@
   padding: 15px;
   margin-top: 60px;
   margin-left: 20px;
-  background-color: crimson;
+  background-color: #00ABB3;
+  border-color: #CDFCF6;
+  /* border: 4px; */
+  /* border: 2px solid blanchedalmond; */
   color: whitesmoke;
 
 }
@@ -26,9 +29,36 @@
 }
 .todo-lists{
   margin-top: 15px;
-  margin-left: 18px;
+  margin-left: 19%;
+  margin-right: 14%;
   position: relative;
 }
 .list-number{
   margin: 10px;
+  border: solid #112B3C;
+  background-color: #112B3C;
+  color: whitesmoke;
+  padding: 4px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+}
+.horizontal-line{
+  border-top: 4px solid #CFD2CF
+}
+.text-todo{
+  padding: 4px;
+  padding-right: 100px;
+  margin-left: 10px;
+  font-size: larger;
+}
+.delete-button{
+  float: right;
+  background-color: #E26868;
+  border-radius: 10px;
+  padding: 8px;
+  color: white;
+  border-color: #CF0A0A;
+
 }
