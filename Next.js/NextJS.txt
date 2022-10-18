@@ -1,0 +1,6 @@
+fullstack react developer
+
+- server side rendering 
+- file-based routing
+- fullstack capabilities
+- 
