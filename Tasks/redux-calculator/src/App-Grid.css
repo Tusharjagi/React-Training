@@ -8,8 +8,8 @@
     margin-top: 60px;
     border: solid 2px gainsboro;
     padding: 15px;
-    margin-right: 35%;
-    margin-left: 35%;
+    /* margin-left: 34%; */
+    /* position: fixed; */
 }
 
 .display {
@@ -34,36 +34,41 @@
     margin-top: 5px;
 }
 
-.zero:focus,
-.one:focus,
-.two:focus,
-.three:focus,
-.four:focus,
-.five:focus,
-.six:focus,
-.seven:focus,
-.eight:focus,
-.nine:focus,
-.minus:focus,
-.plus:focus {
+.number-buttons:focus {
     background-color: #142f44;
 }
 
-.one,
-.two,
-.three,
-.four,
-.five,
-.six,
-.seven,
-.eight,
-.nine,
-.zero,
-.plus,
-.minus {
+.number-buttons {
     padding: 15px 72px 15px 72px;
     font-size: 60px;
     background-color: #205b7a;
     border-color: whitesmoke;
     color: whitesmoke;
+}
+
+.clear-button {
+    display: grid;
+    background-color: #1d3849;
+    /* margin-top: 34%; */
+    margin-left: 54%;
+    font-size: 50px;
+    color: whitesmoke;
+}
+
+.clear-button:focus {
+    background-color: rgb(176, 53, 53);
+}
+
+.calculate-button {
+    position: absolute;
+    display: grid;
+    background-color: #1d3849;
+    /* margin-top: 34%; */
+    margin-left: 38%;
+    font-size: 50px;
+    color: whitesmoke;
+}
+
+.calculate-button:focus {
+    background-color: green;
 }

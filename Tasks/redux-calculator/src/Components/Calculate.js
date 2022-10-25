@@ -1,5 +1,5 @@
 const Calculate = () => {
-  return <button className="calculate">Calculate</button>;
+  return <button className="calculate-button">Calculate</button>;
 };
 
 export default Calculate;

@@ -1,5 +1,5 @@
 const Subtract = () => {
-    return <button className="minus">-</button>;
+    return <button className="number-buttons">-</button>;
   };
   
   export default Subtract;
