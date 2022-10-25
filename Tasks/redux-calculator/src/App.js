@@ -1,4 +1,5 @@
-import "./App.css";
+// import "./App.css";
+import "./App-Grid.css";
 import Calculate from "./Components/Calculate";
 import Clear from "./Components/Clear";
 import Display from "./Components/Display";
@@ -22,18 +23,20 @@ function App() {
       <Header />
       <div className="App">
         <Display />
-        <One />
-        <Two />
-        <Three />
-        <Four />
-        <Five />
-        <Six />
-        <Seven />
-        <Eight />
-        <Nine />
-        <Subtract />
-        <Zero />
-        <Plus />
+        <span className="number-container">
+          <One />
+          <Two />
+          <Three />
+          <Four />
+          <Five />
+          <Six />
+          <Seven />
+          <Eight />
+          <Nine />
+          <Subtract />
+          <Zero />
+          <Plus />
+        </span>
       </div>
       <Calculate />
       <Clear />

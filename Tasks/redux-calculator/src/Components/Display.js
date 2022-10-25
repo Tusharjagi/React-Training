@@ -1,5 +1,9 @@
 const Display = () => {
-    return ( <span className="display">80</span> );
-}
- 
+  return (
+    <span className="display">
+      <span className="display-num">80</span>
+    </span>
+  );
+};
+
 export default Display;

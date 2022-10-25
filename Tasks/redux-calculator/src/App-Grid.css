@@ -1,0 +1,69 @@
+.header {
+    font-size: 60px;
+    padding-left: 42%;
+}
+
+.App {
+    display: grid;
+    margin-top: 60px;
+    border: solid 2px gainsboro;
+    padding: 15px;
+    margin-right: 35%;
+    margin-left: 35%;
+}
+
+.display {
+    font-family: digital-7;
+    background-color: #a2bbcf;
+    border: solid 2px black;
+}
+
+.display-num {
+    display: grid;
+    font-size: 100px;
+    margin-bottom: 30px;
+    margin-top: 2%;
+    float: right;
+    margin-right: 4%;
+}
+
+.number-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1px;
+    margin-top: 5px;
+}
+
+.zero:focus,
+.one:focus,
+.two:focus,
+.three:focus,
+.four:focus,
+.five:focus,
+.six:focus,
+.seven:focus,
+.eight:focus,
+.nine:focus,
+.minus:focus,
+.plus:focus {
+    background-color: #142f44;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.zero,
+.plus,
+.minus {
+    padding: 15px 72px 15px 72px;
+    font-size: 60px;
+    background-color: #205b7a;
+    border-color: whitesmoke;
+    color: whitesmoke;
+}
