@@ -1,5 +1,9 @@
+const onHandleCalculate = () => {
+  console.log("calculate")
+}
+
 const Calculate = () => {
-  return <button className="calculate-button">Calculate</button>;
+  return <button onClick={onHandleCalculate} className="calculate-button">Calculate</button>;
 };
 
 export default Calculate;

@@ -1,3 +1,5 @@
+export const EIGHT = "EIGHT";
+
 export const SUBTRACT = "SUBTRACT";
 export const ADD = "ADD";
 export const CLEAR = "CLEAR";

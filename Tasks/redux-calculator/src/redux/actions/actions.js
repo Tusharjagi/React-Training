@@ -8,6 +8,13 @@ export const display = (data) => ({
   },
 });
 
+export const eight = (data) => ({
+  type: actions.EIGHT,
+  payload: {
+    data
+  },
+});
+
 export const add = (data) => ({
   type: actions.ADD,
   payload: {
