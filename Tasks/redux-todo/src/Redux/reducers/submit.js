@@ -11,10 +11,7 @@ const submitReducer = (state = initialState, action) => {
       const { data } = action.payload;
       return {
         ...state,
-        list: [
-          ...state.list,
-          data
-        ],
+        list: [...state.list, data],
       };
     }
     default:
