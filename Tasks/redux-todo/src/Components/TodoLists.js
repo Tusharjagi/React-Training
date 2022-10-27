@@ -3,12 +3,13 @@ import DeleteButton from "./DeleteButton";
 
 const TodoLists = () => {
   const list = useSelector((state) => state.submitReducer.list);
-  const displayData = list.map((items,key) => {
+  // console.log(list)
+  const displayData = list.map((items,id) => {
     return (
-      <div className="todo-lists" key={key}>
-        <span className="list-number">{key + 1})</span>
+      <div className="todo-lists" key={id}>
+        <span className="list-number">{id + 1})</span>
         <span className="text-todo">{items}</span>
-        <DeleteButton/>
+        <DeleteButton ids={id}/>
         <hr className="horizontal-line"/>
       </div>
     );
