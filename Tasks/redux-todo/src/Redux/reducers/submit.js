@@ -18,7 +18,7 @@ const submitReducer = (state = initialState, action) => {
       const id = action.payload;
       // console.log(id.id);
       return {
-        // // ...state,
+        ...state,
         // list: [
         //   ...state.list.filter((ite)
         // ],
