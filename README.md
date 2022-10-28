@@ -1,2 +1,2 @@
 # React-Training
-all learning in reat 
+all learning in react
