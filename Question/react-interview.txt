@@ -1,0 +1,32 @@
+1) what do you like and dislike about React ?
+2) Conditional rendering and List rendering ?
+3) class component's lifeCycle methods
+4) Context API
+5) Hooks - useState, useEffect and useContext
+6) Optimization 
+    - Pure Components
+    - memo
+    - useMemo and useCallback
+7) How to share logic across component ?
+    - Higher order Components
+    - Render props pattern
+    - Custom hooks
+8) What are some of the packages that you use along with React ?
+    - styling 
+    - Routing
+    - Form handling 
+    - State Management
+    - CRA vs Custom webpack config
+
+----------(Redux)--------
+1) What is Redux ?
+2) How do you decide whether to choose Context API or Redux ?
+3) What is the redux store ?
+4) What are actions ? 
+5) What are action creators ?
+6) What are reducers ?
+7) How the control flows between these different parts
+8) What exactly does the connect function do from the react-redux library ?
+9) What do mapStateToProps and mapDispatchToProps actually do ?
+10) Why should you dispatch an action to update the state and not update store directly ?
+11) In a reducer, Why should you return a new object as state and not modify the existing state object ?
