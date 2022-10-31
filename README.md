@@ -1,2 +1,3 @@
 # React-Training
-all learning in react
+React 
+Next.js
