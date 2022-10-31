@@ -1,3 +1,3 @@
 # React-Training
-React 
-Next.js
+- React
+- Next.js
