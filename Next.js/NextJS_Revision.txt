@@ -1,0 +1,230 @@
+1) File based routing 
+	- Route with pages
+	- Nested routes
+	- Dynamic routes
+	- Catch-all routes
+	- Navigate from the UI
+	- Programmatically navigate b/w pages
+	
+2) Pre-rendering
+	- what is pre-rendring 
+		...ans: Pre-render just means render in advance of sending it to the browser
+				
+				1) React vs Next JS
+					By default, Next JS pre-renders every page in application
+					
+				2) What does pre-render means ? 
+					Next JS generates HTML for each page in advance instead of having it all done by client-side JavaScript
+					
+				3) No pre-rendering in Reactjs 
+					- initial load: app is not rendered
+					- Hydration: React components are initialized and App becomes  interactive  
+					
+				4) Pre-rendering in Next JS
+					- inital load: pre-render HTML is display
+					- Hydration: React components are initialized and App becomes  interactive
+	
+	- Why Pre-rendering ?
+		...ans: 1)  - Pre-rendering improves performace
+					- In a React app, you need to wait for the JavaScript to be executed
+					- Perhaps fetch data from an externam API and then render the UI
+					- There is a wait time for the user
+					- With a pre-rendered page, the HTML is already generated and loads faster
+					
+				2) Pre-rendering helps with SEO
+					- If you're build a blog or an e-commerce site, SEO is a concern
+					- With a React app, if the search engine  hits your page, it only sees a div tag with id equal to root
+					- If search engine hits a pre-rendered page though, all the content is present in the source code which will help index that page
+					- If SEO is of concern for your app, pre-rendering is what you what 				
+					
+	- Types of pre-rendring 
+		1) Static Generation
+			[Summary =
+				- Static Generation is a method of pre-rendering where the HTML pages are generated at build time 
+				- With and without external data
+				- Export getStaticProps function for external data
+				- HTML, JavaScript and a JSON file are generated
+				- If you navigate directly to the page route, the HTML file served
+				- If you navigate to the page route from a different route, the page is created client side using the JavaScript and JSON prefetched from the server
+			]
+			
+			getStaticProps = () => {
+				1)	- getStaticProps runs only on the server side 
+					- The function will never run client-side
+					- The code you write inside getStaticProps won't even be included in the JS bundle that is send to the browser
+				
+				2) 	- You can write server-side code directly in getStaticProps
+					- Accessing the file system using the fs module or quering a database can be done inside getStaticProps 
+					- You also don't have to worry about including API key in getStaticProps as that won't make it to the browser
+					
+				3)	- getStatic is allowed only in a page and cannot be run from a regular component file 
+					- It is used only for pre-rendering and not client-side data fetching 
+				4)	- getStaticProps should return an object should contain a props key which is an object* 
+					- In our example, we returned an object & the object contained a props key which was an object as well.
+					
+				5)	- getStaticProps will run at build time
+					- During development, getStatic runs on every request 
+					
+			}
+			
+			getStaticPaths = () => {
+				fallback: false,
+				fallback: true,
+				fallback: blocking,
+			}
+			
+			<Link Pre-fetching>
+				- when a page with getStaticProps is pre-rendereed at build time, in addition to the page HTML file, Next.js generates a JSON file holding the result of running getStaticProps
+				- The JSON file will be used in client-side routing throuh next/link, or next/router
+				- when you navigate to a page that's pre-rendered using getStaticProps, Next.js fetches the JSON file (pre-computed at build time) and uses it as the props to create the page component client-side
+				- Client-side page transitions will not call getStaticProps as only the exported JSON is used
+			<Link/>
+			
+		 	- Without data
+			- With data
+			- Incremental Static Generation (ISR)
+				{
+					There was a need to update only those pages which needed a change without having to rebuild the entire app
+					----ISR----
+					With ISR, Next.js allows you to update static pages after you've built your application
+					you can statically generate individual pages without needing to rebuild the entire side, effectively solving the issue of dealing with stale data
+					How ? 
+					In the getStaticProps function, apart from the props key, we can specify a revalidate key
+					The value for revalidate is the number of seconds after which a page re-generation can occur
+					
+					[Re-generation] {
+						- A re-generation is initiated only if a user makes a request after the revalidate time 
+						- If a user visits our product details page but there is no other user hitting that page the entire day, the re-genration does not happen 
+						- revalidate does not mean the page automatically re-generates every 10 seconds 
+						- It simply denotes the time after which, if a user makes a request, a re-generation has to be initiated
+						- The re-gerneration can also fail and the previously cached be served till the subsequent re-generations succeed
+						 
+					}					
+				}
+				
+				----problem with Static Generation---- ?
+					{
+					 ____We canneot fetch data at request time____
+					 
+					 	- With not being able to fetch data per request, we run into the problem of stale data 
+					 	- Let's say we are building a news website
+					 	- The content is very dynamic in the sense that new articles can be published almost every second 
+					 	- GetStaticProps will fetch the news at build time which is not suitable at all
+					 	- GetStaticPaths will help fetch the data on the initial request but it is then cached for subsequent requests 
+					 	- Incremental static regeneration (ISR) can help but if revalidate is 1 second, we still might not always see the most up to date news when the regeneration is happening in the background 
+					 	- Rather fetch the data on the client side by making a get request from the component. But no SEO
+					 	
+					 	____We don't get access to the incoming request____
+					 		- Problem when the data that neends to be fetched is specific to a user
+					 		- Let's say we are building a website similar to twitter
+					 		- The tweets that I see also need to be SEO friendly as it is public content that anyone in world can see
+					 		- To fetch tweets specific to the user, we need the userId. And that can be obtained only if have we access to the incoming request
+					 		- You could do it client side in useEffect for example but that means you again miss out on SEO 
+					 		
+					} 
+				
+			- Dynamic parameters when fetching data
+		2) Server-side Rendering (SSR)
+		
+			- What is SSR 
+				...ans: - SSR is a form of pre-rendering where the HTML is generated at request time 
+						- SSR is required when you need to fetch data per request and also when you need to fetch personalized data keeping in mind SEO
+					
+					_________HOW___?______
+						- How does Next.js make it possible to fetch data ata request time ?
+						- How does Next.js make it possibrle to get access to the inccoming request which will facilitate fetching data personalized for a user
+			
+			getServerSideProps = () => {
+				1)	- getServerSideProps runs only on the server side
+					- The function will never run client-side
+					- The code you write inside getServerSideProps won't even be included in the JS bundle that is send to the browser
+					
+				2)	- You can write server-side code directly in getServerSideProps 
+					- Accessing the file system using the fs module or querying a database can be done inside getServerSideProps
+					- You also don't have to worry about including API keys in getServerSideProps as that won't make it to the browser
+				3)	- getServerSideProps is allowed only in a page and cannot be run from a regular component file
+					- It is used only for pre-rendering and not client-side data fetching 
+				4)	- getServerSideProps should return an object and object should contain a props key which is an object*
+				
+				5)	- getServerSideProps will run at request time 
+			
+			}
+ 						
+				
+			- data fetching 
+	- Client-side data fetching
+				(SWR)
+	- Combine pre-rendering with client-side data fetching
+		--Event Listing Page 
+			- A page that shows a list of event happening around you
+			- SEO + Request time data fetching -> Server-side rendering with getServerSideProps
+			- Client-side data fetching for filtering events
+			(Ideally, both pagination and filtering would take place client side but, for this example, we're only going to focus on filtering)
+	
+3) API routes
+	{
+		- Next JS is a full stack framework
+		- You can write the FE code in React and also write APIs that can be called by the front end code
+		- API routes allow you to create RESTful endpoints as part of your Next.js application folder structure 
+		- Within the pages folder, you need to create a folder called `api`
+		- Within that `api` folder, you can define all the APIs for your application 
+		- You can add business logic without needing to write any additional custom server code and without having to configure any API routes
+		- Next JS gives you everything you need to write full-stack React + Node application 
+		
+	}
+	- API routes feature & how to create a basic API in Next.js
+	- Handle GET requests 
+	- Handle POST requests
+	- Dynamic API routes
+	- Handle Delete requests
+	- Catch all API routes
+	
+4) Support for CSS modules
+	{ Style is essential to building any web application }
+	- Global styles
+	- Component styles
+	- SASS or SCSS
+	- CSS-in-JS solution
+5) Authentication 
+	- What exactly does authentication entail when it comes to Next JS ?
+	- Next-auth library
+	- Authenticating with GitHub
+	- Handle signIn, signout ans securing the application
+	- How to work with a database like MongoDb
+	
+	{
+		____Authentication in Next.js____
+		- Client-side authentication
+		- Server-side authentication
+		- API routes authentication
+		- User data
+		- No need to persist ? Auth services like Github, Facebook etc. to ensure the user is authenticated 
+		- Need to persist ? Database
+	}
+	
+6) Dev and Prod build system 
+	- - next.js vercel
+
+7) Misc Section Intro 
+	- App Layout
+	- Head Component
+	- Image Component -{blurDataUrl}
+	- Absolute Imports and Module Paths
+	- Static HTML Export 
+	- Configure TypeScript Support
+	- Preview 
+	- Next Config File
+	- Redirects 
+	- Environment Variables
+
+
+-----getInitialProps----
+-----Dynamics imports----
+
+
+
+
+
+
+
+

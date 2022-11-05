@@ -1,0 +1,78 @@
+1) File based routing 
+	- Route with pages
+	- Nested routes
+	- Dynamic routes
+	- Catch-all routes
+	- Navigate from the UI
+	- Programmatically navigate b/w pages
+	
+2) Pre-rendering
+	- what is pre-rendring 
+	- Why Pre-rendering ?		
+	- Types of pre-rendring 
+		1) Static Generation
+		 	- Without data
+			- With data
+			- Incremental Static Generation (ISR)
+			- Dynamic parameters when fetching data
+			
+			getStaticProps = () => {}
+			getStaticPaths = () => {}
+			<Link Pre-fetching><Link/>
+			
+		2) Server-side Rendering
+			- data fetching 
+				
+			getServerSideProps = () => {}
+			
+	- Client-side data fetching 
+			(SWR package)
+	- Combine pre-rendering with client-side data fetching
+	
+3) API routes
+	- API routes feature & how to create a basic API in Next.js
+	- Handle GET requests 
+	- Handle POST requests
+	- Dynamic API routes
+	- Handle Delete requests
+	- Handle Patch requests ----
+	- Catch all API routes
+	
+4) Support for CSS modules
+	- Global styles
+	- Component styles
+	- SASS or SCSS
+	- CSS-in-JS solution
+	
+5) Authentication (NextAuth.js)
+	- What exactly does authentication entail when it comes to Next JS ?
+	- Next-auth library
+	- Authenticating with GitHub
+	- Handle signIn, signout ans securing the application
+	- How to work with a database like MongoDb
+	
+6) Dev and Prod build system 
+	- next.js vercel
+
+7) Misc Section Intro 
+	- App Layout
+	- Head Component
+	- Image Component -{blurDataUrl}
+	- Absolute Imports and Module Paths
+	- Static HTML Export 
+	- Configure TypeScript Support
+	- Preview Mode 
+	- Next Config File
+	- Redirects 
+	- Environment Variables
+
+-----getInitialProps----
+-----Dynamics imports----
+
+
+
+
+
+
+
+
