@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+.header {
+  margin-left: 38%;
+  color: #69b1db;
+  margin-top: 50px;
+  font-size: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.file-uploader {
+  border-style: dashed;
+  border-color: #69b1db;
+  display: grid;
+  place-items: center;
+  height: 250px;
+  width: 500px;
+  margin-left: 38%;
+  margin-top: 80px;
+  margin-bottom: 20px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.upload-icon {
+  height: 150px;
+  width: 150px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.uploader-text {
+  font-size: 28px;
+  color: #5391db;
 }
 
-.App-link {
-  color: #61dafb;
+.uploading-status {
+  background-color: #E9F0FE;
+  border: solid;
+  border-color: #E9F0FE;
+  border-radius: 10px;
+  display: grid;
+  height: 50px;
+  font-size: 26px;
+  width: 500px;
+  margin-left: 38%;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.doc-icon {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.upload-text {
+  position: absolute;
+  margin-left:  50px;
+  margin-top: 10px;
+}
+
+.check-icon {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  margin-left: 450px;
+  margin-top: 10px;
+}
+
+.submit-button {
+  font-size: 25px;
+  margin-left: 49%;
+  margin-top: 20px;
+  background-color: #54B435;
+  color: whitesmoke;
+  border-radius: 10px;
+  border-color: #395144;
+}
+
+.no-file{
+  margin-left: 46%;
+  font-size: 30px;
+  color: #003bfc;
+  background-color: #f5cfce;
+  border: 5px solid red;
+  border-radius: 15px;
+
 }
