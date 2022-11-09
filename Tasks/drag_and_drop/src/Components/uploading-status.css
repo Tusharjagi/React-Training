@@ -1,0 +1,34 @@
+.uploading-status {
+    background-color: #E9F0FE;
+    border: solid;
+    border-color: #E9F0FE;
+    border-radius: 10px;
+    display: grid;
+    height: 50px;
+    font-size: 26px;
+    width: 500px;
+    margin-left: 38%;
+    margin-bottom: 20px;
+}
+
+.doc-icon {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.upload-text {
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.check-icon {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    margin-left: 450px;
+    margin-top: 10px;
+}

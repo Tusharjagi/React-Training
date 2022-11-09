@@ -1,25 +1,24 @@
 import { useState } from "react";
 import "./App.css";
-import FileUploader from "./Components/FileUploader";
+import UploaderBox from "./Components/UploaderBox";
 import Header from "./Components/Header";
-import SubmitButton from "./Components/SubmitButton";
+import UploadButton from "./Components/UploadButton";
 import UploadingStatus from "./Components/UploadingStatus";
 
 function App() {
   const [data, setData] = useState([]);
-  
+  console.log(data)
   const handleOnChange = (e) => {
-    const image = e.target.files[0];
-    if (image) {
-      const imageName = image.name;
-      const allImages = [...data, imageName];
-      setData(allImages);
+    const fileData = [];
+    for (const value of Object.values(e.target.files)) {
+      fileData.push(value);
     }
+    setData(fileData);
   };
 
   const emptyAllData = () => {
-    setData([])
-  }
+    setData([]);
+  };
 
   const uploadStatus =
     data.length === 0 ? (
@@ -27,14 +26,14 @@ function App() {
     ) : (
       <>
         <UploadingStatus data={data} />
-        <SubmitButton setData={emptyAllData} />
+        <UploadButton setData={emptyAllData} />
       </>
     );
 
   return (
     <div className="App">
       <Header />
-      <FileUploader onChange={handleOnChange} />
+      <UploaderBox onChange={handleOnChange} />
       {uploadStatus}
     </div>
   );

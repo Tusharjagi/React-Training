@@ -1,0 +1,15 @@
+.upload-button {
+  font-size: 25px;
+  margin-left: 49%;
+  margin-top: 20px;
+  background-color: #54B435;
+  color: whitesmoke;
+  border-radius: 10px;
+  border-color: #395144;
+
+}
+
+.upload-button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}

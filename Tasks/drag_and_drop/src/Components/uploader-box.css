@@ -1,0 +1,36 @@
+.file-uploader {
+    position: relative;
+    border-style: dashed;
+    border-color: #69b1db;
+    display: grid;
+    place-items: center;
+    height: 250px;
+    width: 500px;
+    margin-left: 38%;
+    margin-top: 80px;
+    margin-bottom: 20px;
+
+}
+
+.upload-icon {
+    height: 150px;
+    width: 150px;
+}
+
+.uploader-text {
+    font-size: 28px;
+    color: #5391db;
+}
+
+input {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.file-uploader:hover {
+    opacity: 0.4;
+    
+}

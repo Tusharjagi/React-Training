@@ -5,80 +5,12 @@
   font-size: 50px;
 }
 
-.file-uploader {
-  border-style: dashed;
-  border-color: #69b1db;
-  display: grid;
-  place-items: center;
-  height: 250px;
-  width: 500px;
-  margin-left: 38%;
-  margin-top: 80px;
-  margin-bottom: 20px;
-
-}
-
-.upload-icon {
-  height: 150px;
-  width: 150px;
-}
-
-.uploader-text {
-  font-size: 28px;
-  color: #5391db;
-}
-
-.uploading-status {
-  background-color: #E9F0FE;
-  border: solid;
-  border-color: #E9F0FE;
-  border-radius: 10px;
-  display: grid;
-  height: 50px;
-  font-size: 26px;
-  width: 500px;
-  margin-left: 38%;
-  margin-bottom: 20px;
-}
-
-.doc-icon {
-  position: absolute;
-  height: 30px;
-  width: 30px;
-  margin-top: 10px;
-  margin-left: 10px;
-}
-
-.upload-text {
-  position: absolute;
-  margin-left:  50px;
-  margin-top: 10px;
-}
-
-.check-icon {
-  position: absolute;
-  height: 30px;
-  width: 30px;
-  margin-left: 450px;
-  margin-top: 10px;
-}
-
-.submit-button {
-  font-size: 25px;
-  margin-left: 49%;
-  margin-top: 20px;
-  background-color: #54B435;
-  color: whitesmoke;
-  border-radius: 10px;
-  border-color: #395144;
-}
-
 .no-file{
   margin-left: 46%;
   font-size: 30px;
-  color: #003bfc;
-  background-color: #f5cfce;
-  border: 5px solid red;
+  color: #1746A2;
+  background-color: #81C6E8;
+  border: 5px solid #81C6E8;
   border-radius: 15px;
 
 }
