@@ -7,7 +7,7 @@ const FileUploader = ({onChange}) => {
       <div className="file-uploader">
         <img className="upload-icon" src={upload} alt="upload_icon" />
         <span className="uploader-text">Browse file to upload</span>
-        <input type="file" accept="image/*" name="file" onChange={onChange} multiple />
+        <input type="file" accept="image/*" name="file" onChange={onChange} multiple draggable="true" />
       </div>
     </form>
   );
