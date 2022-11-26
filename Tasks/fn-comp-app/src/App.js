@@ -20,14 +20,14 @@ function App() {
 
   const handleOnDelete = (itemId) => {
     // console.log("handle On click");
-    console.log(itemId);
+    // console.log(itemId);
     const setText = textArray.filter((i) => {
-      console.log(i);
+      // console.log(i);
       return textArray[itemId] !== i;
     });
     // console.log(textArray);
     // let deleteArray = [...setText,textArray]
-    console.log(setText)
+    // console.log(setText)
     setTextArray(setText);
     
     // const items = this.state.items.filter((c) => c.key !== itemId);

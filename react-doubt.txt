@@ -1,0 +1,128 @@
+------------Mosh-----------
+
+use strict , React.strictMode
+console.log() --two times
+js vs jsx
+
+why we need componentDidMount , we do a API call in constructor
+
+rederedData
+react devtools backend.js
+
+problem in delete
+
+useEffect internal implimentation
+
+PLP related 
+
+-------------
+naming
+
+handle delete 
+deleteHandler
+
+promise
+
+four type of useEffect -
+	one time render -> mount 
+	every time render -> non 
+	conditional render -> [arg1,arg2]
+	Unmount -> return
+	
+	
+	relative vs absoulte
+
+	<a> , Link
+	
+	redireact
+	path="*"
+	replace
+	how to find complexity and best fast syntax
+	
+	-----------------------------------------------11-oct
+	
+	state managements vs redux
+	code top-down approchs in card comp
+	how to read code	
+	currying funtions - Haskell Curry(Mathemactician)
+	context
+	
+	-----------------------------------------
+	
+	best way to use hooks or connect  redux
+	
+	how to estimate our contribute,
+	
+	potential bug that you can introduce when using index key ?
+	
+	what do after a long period of experiences 
+	
+	nextjs 25 october 2016 , react 29 May 2013
+	
+	MUI and tailwind 
+	
+	--------------------------------------------------------
+	
+	what do after a long period of experiences 
+	
+	how previour time server side rendering and client side rending works 
+	
+	nextjs 25 october 2016 , react 29 May 2013
+	
+	how to estimate our contribute
+	
+	Client side rendering (CSR)
+	
+	How to make a scaleble app - design a app
+	
+	.env.local
+	
+	
+	---------------------------------------------------------
+	
+	How to i know whats the develop new feature
+	Working with redux
+	react-testing Library 
+	jest
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
