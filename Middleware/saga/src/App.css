@@ -65,3 +65,15 @@
   right: 0;
   left: 24px;
 }
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-items {
+  border: 5px solid grey;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+}

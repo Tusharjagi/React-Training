@@ -1,10 +1,15 @@
 import { PRODUCT_LIST } from "./constant";
 
 export const productList = () => {
-  let data = "hello";
-  console.log("action add to cart", data);
   return {
-    type: PRODUCT_LIST,
-    data,
+    type: PRODUCT_LIST
   };
 };
+
+// export const setProductList = (data) => {
+//   console.log("setProductList");
+//   return {
+//     type: SET_PRODUCT_LIST,
+//     data,
+//   };
+// };

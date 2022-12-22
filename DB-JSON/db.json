@@ -1,0 +1,40 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "name": "Samsung m40",
+      "color": "black",
+      "price": 15000,
+      "category": "Mobile",
+      "brand": "Samsung",
+      "photo": "https://5.imimg.com/data5/EZ/BB/SI/SELLER-92529419/samsung-galaxy-m40-midnight-blue-phone-1000x1000.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Samsung F20",
+      "color": "white",
+      "price": 30000,
+      "category": "Mobile",
+      "brand": "Samsung",
+      "photo": "https://5.imimg.com/data5/EZ/BB/SI/SELLER-92529419/samsung-galaxy-m40-midnight-blue-phone-1000x1000.jpg"
+    },
+    {
+      "id": 3,
+      "name": "T-shirt",
+      "color": "red",
+      "price": 5000,
+      "category": "clothes",
+      "brand": "Nike",
+      "photo": "https://5.imimg.com/data5/EZ/BB/SI/SELLER-92529419/samsung-galaxy-m40-midnight-blue-phone-1000x1000.jpg"
+    },
+    {
+      "id": 4,
+      "name": "sport shoes",
+      "color": "red and black",
+      "price": 15000,
+      "category": "shoes",
+      "brand": "fila",
+      "photo": "https://5.imimg.com/data5/EZ/BB/SI/SELLER-92529419/samsung-galaxy-m40-midnight-blue-phone-1000x1000.jpg"
+    }
+  ]
+}
